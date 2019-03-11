@@ -29,7 +29,7 @@ Traceback (most recent call last):
   File "<stdin>", line 2, in <module>
 ValueError: invalid literal for int() with base 10: '='
 >>> while respuesta == "si":
-... 	numero = int(input("digite un numero: "))
+...   numero = int(input("digite un numero: "))
 ... 	if numero > 0:
 ... 		print("El numero ingresado es positivo")
 ... 	elif numero < 0:
