@@ -14,5 +14,5 @@ class Usuario:
 
 David = Usuario('David','david123','davidpalmalugo@gmail.com')
 print(David.username)
-print(David.password)
+print(David.__password)
 print(David.email)	
