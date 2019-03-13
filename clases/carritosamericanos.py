@@ -31,7 +31,7 @@ class autos_deportivos:
         else:
             print("El vehiculo ya ha sido vendido")
 
-tuning = autos_deportivos('ford','mustang',2018,'americanos', 'automatico','verde oliva','credito',False)
+tuning = autos_deportivos('ford','gt',2018,'americanos', 'automatico','verde oliva','credito',False)
 
 tuning.ver_datos()
 tuning.verificar_status()
