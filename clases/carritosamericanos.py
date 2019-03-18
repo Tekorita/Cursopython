@@ -25,13 +25,13 @@ class autos_deportivos:
     def verificar_status(self):
         if self.status_venta():
             if (self.modo_compra == "credito") and (self.ano >=2017):
-                print("Disponible su venta a credito")
+                print("Disponible su venta a credito por ser un coche nuevo")
             else:
                 print("Disponible su venta a contado recuerdo que aplica credito a carros del 2017 en adelante:)")
         else:
             print("El vehiculo ya ha sido vendido")
 
-tuning = autos_deportivos('ford','gt',2018,'americanos', 'automatico','verde oliva','credito',False)
+tuning = autos_deportivos('Chevrolet','corvette stingray',2018,'americanos', 'automatico','verde oliva','credito',False)
 
 tuning.ver_datos()
 tuning.verificar_status()
