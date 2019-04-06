@@ -21,7 +21,7 @@
 i = 0
 
 while i < 5:
-    valor = float(input("ingresa una hora por favor"))
+    valor = float(input("ingresa una hora a convertir en segundos: "))
     resultado = valor * 3600
     print(int(resultado))
     i = i + 1
