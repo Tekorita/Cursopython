@@ -20,12 +20,10 @@ print(lista_pares)
 
 tupla = tuple((valor for valor in range(0, 101) if valor % 2 != 0))
 
-
 print(tupla)
 
 #Por ultimo las listas comprehension se pueden utilizar para llenar Diccionarios 
 
 diccionario = { indice:valor for indice, valor in enumerate(lista) if indice < 10}
-
 
 print(diccionario)
