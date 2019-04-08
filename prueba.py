@@ -1,6 +1,7 @@
-lista = [2,2,2,3,4,4,7,7,7,9,9,9]
+def tablaDeMultiplicar(valor):
+    for num in range(1,11):
+        resultado = valor * num
+        print(str(valor)+" x "+str(num)+" = "+str(resultado))
 
-lista2 = set(lista)
-
-print(list(lista2))
-    
+valor1 = int(input("Ingresa el numero de la tabla de multiplicar"))
+tablaDeMultiplicar(valor1)
