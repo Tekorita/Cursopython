@@ -13,7 +13,7 @@ print(resultado)
 def valor_global():
 	variable_global = 'Cambiar valor' #variable locales
 
-variable_global = 'esto es una variable global'
+variable_global = 'esto es una variable global entiende!!'
 
 print(variable_global)
 valor_global()

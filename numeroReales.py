@@ -27,7 +27,7 @@
 # 1         | Es Positivo 
 i = 0
 while i < 5:
-    valor = float(input("Ingresa el valor: "))
+    valor = float(input("Ingresa el valor a calcular please: "))
 
     if valor > 0:
         print("Es positivo")
