@@ -7,4 +7,4 @@ def generador(*args):
 		yield valor * 10, True #Un ejemplo
 
 for valor_uno, valor_dos in generador(1,2,3,4,5,6,7,8,9):
-	print(valor_uno, valor_dos)
+	print(valor_uno, valor_dos) 
