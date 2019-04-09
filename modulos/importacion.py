@@ -15,5 +15,3 @@ calculos.resta()
 
 print(__name__) #el atributo __name__ es para determinar que script o archivo sea el principal de ser el principal su valor sera __main__
 
-
-

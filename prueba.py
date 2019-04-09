@@ -1,8 +1,7 @@
-def generador(*args):
-    for valor in args:
-        yield valor * 1
-lista=[0]
-for valor1 in generador(1,2,3,4,5,6,7,8,9,10):
-    lista[valor1] = valor1
+def suma(valor1, valor2):
+    return valor1 + valor2
 
-print(lista)
+print(suma(2,2))
+
+print(__name__)
+print(dir(suma))
