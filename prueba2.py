@@ -1,18 +1,11 @@
-class Animal:
-    volador = True
+lista1 = [1,2,3,4]
+lista2 = [4,3,2,1]
 
-class Cocodrilo(Animal):
-    def __init__(self, nombre):
-        self.nombre = nombre
+print(lista1)
+print(lista2)
 
-    @classmethod
-    def mostrar_datos(cls, nombre):
-        cls.volador = False
-        return Cocodrilo(nombre)
+for valor1, valor2 in zip(lista1,lista2):
+    print(str(valor1)+" "+str(valor2)) 
 
-cocodril = Cocodrilo.mostrar_datos("rabioso")
 
-print(cocodril.volador)
-print(cocodril.nombre)
 
-            
