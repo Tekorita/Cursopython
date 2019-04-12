@@ -4,7 +4,7 @@ class Animal:
 	volador = True
 
 class Cocodrilo(Animal):
-	
+
 	def __init__(self, nombre):
 		self.nombre = nombre
 
@@ -18,6 +18,6 @@ class Cocodrilo(Animal):
 		cls.volador = False
 		return Cocodrilo(nombre)
 
-cocodrilo = Cocodrilo.new('coco')
+cocodrilo = Cocodrilo.new('mordelon')
 print(cocodrilo.nombre)
 print(cocodrilo.volador)
