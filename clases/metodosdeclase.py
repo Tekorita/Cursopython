@@ -18,8 +18,6 @@ class Cocodrilo(Animal):
 		cls.volador = False
 		return Cocodrilo(nombre)
 
-
-
 cocodrilo = Cocodrilo.new('coco')
 print(cocodrilo.nombre)
 print(cocodrilo.volador)
