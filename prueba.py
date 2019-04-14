@@ -35,7 +35,7 @@ class Usuario:
 
 #caninos.ver_datos()
 
-user = str(input("Ingresa el usuario: "))
+user = str(input("Ingresa el usuario de sesion: "))
 password = str(input("Ingresa la super clave bella: "))
 email = str(input("Ingresa el email: "))
 
