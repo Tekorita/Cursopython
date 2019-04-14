@@ -37,7 +37,7 @@ class Usuario:
 
 user = str(input("Ingresa el usuario de sesion: "))
 password = str(input("Ingresa la super clave de sesion: "))
-email = str(input("Ingresa el email: "))
+email = str(input("Ingresa el email de sesion: "))
 
 usuario1 = Usuario(user,password,email)
 
