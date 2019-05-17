@@ -1,4 +1,4 @@
-social_data = {'gender':[{'code':'male','weight':10},{'code':'female','weight':12}],'gender_per_age':[{'code':'1','male':2.4,'female':2.9},{'code':'2','male':2.1,'female':4},{'code':'3','male':2.9,'female':8},{'code':'4','male':2.2,'female':2}]}
+social_data = {'gender':[{'code':'male','weight':19},{'code':'female','weight':18}],'gender_per_age':[{'code':'1','male':2.4,'female':2.9},{'code':'2','male':2.1,'female':4},{'code':'3','male':2.9,'female':8},{'code':'4','male':2.2,'female':2}]}
 dic1 = social_data['gender_per_age']
 #val = dic1[0]
 #print(val)

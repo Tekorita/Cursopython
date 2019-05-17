@@ -19,7 +19,7 @@ valores_tuplas = tuple(diccionario.values()) #mostramos los valores del dicciona
 
 """como concatenar diccionarios existen 2 formas"""
 
-diccionario2 = {9 : 'ronaldo', 10: 'messi'}
+diccionario2 = {9 : 'ronaldo CR7', 10: 'messi'}
 
 diccionario['a']= diccionario2[9]
 diccionario[67]= diccionario2[10]
