@@ -35,3 +35,6 @@ print(busqueda)
 print(llaves_diccionario)
 
 print(llaves_lista)
+
+print(llaves_lista[1])
+
