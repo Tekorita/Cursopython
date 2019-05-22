@@ -31,7 +31,7 @@ class Gato(Felino, Mascota):
 
 	def mostrar_nombre(self): #Sobrescritura de metodos
 		Mascota.mostrar_nombre(self)
-		print("EL Nombre del gato es: {}".format(self.nombre))
+		print("EL Nombre o apodo del gato es: {}".format(self.nombre))
 
 
 
