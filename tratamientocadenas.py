@@ -1,6 +1,6 @@
 #Tratamiento de cadenas en python
 
-cadena = input("Digite una cadena de texto: ")
+cadena = input("Digite una cadena de texto o string: ")
 
 #Obtiene longitud de la cadena
 
