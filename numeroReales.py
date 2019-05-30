@@ -30,10 +30,10 @@ while i < 5:
     valor = float(input("Ingresa el valor a calcular please: "))
 
     if valor > 0:
-        print("Es positivo")
+        print("Es positivo o mayor a cero")
     elif valor < 0:
-        print("Es negativo")
+        print("Es negativo o menor a cero")
     else:
-        print("Es neutro")
+        print("Es neutro osea cero")
     i = i + 1
 
