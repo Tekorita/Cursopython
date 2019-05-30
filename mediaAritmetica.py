@@ -23,12 +23,12 @@
 
 i = 0
 x = 0
-lista = [0,0,0,0]
+lista = [4,0,6,0]
 numero2 = 0
 
 while x < 2:
     while i < 4:
-        valor = int(input("Ingresa el valor para hacer el calculo "))
+        valor = int(input("Ingresa el valor para hacer el calculo"))
         lista[i] = valor
         i = i + 1
 
