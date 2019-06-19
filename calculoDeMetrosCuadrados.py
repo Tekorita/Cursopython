@@ -25,7 +25,7 @@
 i = 0
 
 while i < 5:
-    valor = float(input("Ingreso los metros cuadrados del terreno a sembrar para luego calcular: "))
+    valor = float(input("Ingreso los metros cuadrados del terreno a sembrar: "))
     resultado = valor * 4 * valor
     print(int(resultado))
     i = i + 1
