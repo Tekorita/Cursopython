@@ -28,7 +28,7 @@ x = 0
 i = 0
 resultado = 1
 while i < 5:
-    valor = int(input("ingresa el valor: "))
+    valor = int(input("ingresa el valor base o principal: "))
     exponente = int(input("ingresa el exponente: "))
 
     while x < exponente:
