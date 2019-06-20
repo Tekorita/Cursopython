@@ -8,7 +8,7 @@ print ("\nEl numero de caracteres de la cadena es: ", len(cadena))
 
 #Devuelve True si la cadena contiene solo letras
 if cadena.isalpha():
-	print("\nLa cadena es alfabetica")
+	print("\nLa cadena es alfabetica o de letras puess")
 
 #Devuelve true si la cadena contiene solo numeros
 
