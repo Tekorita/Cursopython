@@ -1,4 +1,4 @@
-my_list = ['strings', 15, 17.9, True, 'pera', 'manzana','enciclopedia']
+my_list = ['strings', 15, 17.9, True, 'pera', 'manzana']
 my_list.append(6)#agrega al final de la lista
 my_list.insert(3, 'insert')#agrega en una posicion especifica
 my_list.remove(15)#elimina registro de la lista
