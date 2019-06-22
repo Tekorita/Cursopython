@@ -8,7 +8,7 @@ Type "help", "copyright", "credits" or "license" for more information.
                           ^
 SyntaxError: invalid syntax
 >>> while respuesta == "si":
-... 	numero = int(input("digite un numero: "))
+... 	numero = int(input("digite un numero cualquiera: "))
 ... 	if numero > 0:
 ... 		print("El numero ingresado es positivo")
 ... 	elif numero < 0:
