@@ -5,7 +5,7 @@ print(diccionario)
 diccionario[67] = 'Chetaa da moraaaa'
 
 edad_abuela = diccionario['a']
-busqueda = diccionario.get(68,'no se encontro la chetaaa o la drojansi') #obtenemos valores
+busqueda = diccionario.get(68,'no se encontro la chetaaa') #obtenemos valores
 
 llaves_diccionario = diccionario.keys() #obtenemos solo las llaves del diccionario
 
