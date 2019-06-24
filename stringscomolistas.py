@@ -1,4 +1,4 @@
-my_string = 'Curso de codigo facilito y de platzi'
+my_string = 'Curso de platzi'
 
 print(my_string)
 
