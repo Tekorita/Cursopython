@@ -29,7 +29,7 @@ class autos_deportivos:
             else:
                 print("Disponible su venta a contado recuerdo que aplica credito a carros del 2017 en adelante:)")
         else:
-            print("El vehiculo ya ha sido vendido, disculpa")
+            print("El vehiculo ya ha sido vendido")
 
 tuning = autos_deportivos('Chevrolet','chevelle ss',1968,'americanos', 'automatico','verde oliva','credito',False)
 
