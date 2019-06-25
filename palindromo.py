@@ -6,6 +6,6 @@ def palindromo(palabra):
 	if resultado == palabra2:
 		print("La palabra es un palindromo")
 	else:
-		print("La palabra no es un palindromo no lo es")
+		print("La palabra no es un palindromo")
 
 palindromo(palabra)
