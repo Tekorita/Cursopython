@@ -26,7 +26,6 @@ class autos_deportivos:
         if self.status_venta():
             if (self.modo_compra == "credito") and (self.ano >=2017):
                 print("Disponible su venta a credito por ser un coche nuevo o actual")
-                print("Disponible su venta a credito por ser un coche nuevo o actual")
             else:
                 print("Disponible su venta a contado recuerdo que aplica credito a carros del 2017 en adelante:)")
         else:
