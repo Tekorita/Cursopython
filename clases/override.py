@@ -35,7 +35,7 @@ class Gato(Felino, Mascota):
 
 
 
-gato = Gato("Patricio")
+gato = Gato("fifi")
 
 #gato.nombre = 'Patricio'
 gato.mostrar_nombre()
