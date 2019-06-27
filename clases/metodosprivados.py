@@ -12,7 +12,7 @@ class Usuario:
 	def get_password(self):
 		return self.__password
 
-David = Usuario('David','david123','davidpalmalugo@gmail.com')
+David = Usuario('David','davidJpl','davidpalmalugo@gmail.com')
 print(David.username)
 print(David.__password)
 print(David.email)	
