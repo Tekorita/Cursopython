@@ -9,7 +9,7 @@ class Felino(Animal): #Clase Padre 2
 		return True
 
 	def cazar(self):
-		print("El Felino esta casando otro animal quizas vegetariano o reptil")
+		print("El Felino esta casando otro animal quizas vegetariano")
 
 #para que un metodo herencia propiedades de la misma clase se pasa por parametros el nombre de la clase
 
