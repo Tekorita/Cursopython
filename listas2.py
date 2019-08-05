@@ -11,5 +11,10 @@ list_num.sort(reverse = True)#ordena numero de forma desendente
 list_num.append(list_num2)#agrega una lista dentro de otra
 list_num.extend(list_num2)#concatena o una dos listas
 
-print(my_list)
-print(list_num)
+#print(my_list[0])
+#print(list_num)
+diccionario = {"hdhdhd":9,"faafa":0}
+diccionario2 = {"dfafs": 99}
+tupla = (diccionario, diccionario2)
+
+print(tupla)
