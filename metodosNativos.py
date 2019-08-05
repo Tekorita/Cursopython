@@ -10,7 +10,7 @@ def migratoryBirds(arr):
     
     print("lista original: " + arr)
     print("lista simplificada: " + lista2)
-    print("cantidad de veces q se repite cada num de lista simplificada: "+resultado)
+    print("cantidad de veces q se repite cada num de lista simplificada:"+resultado)
 
 migratoryBirds(lista)
 
