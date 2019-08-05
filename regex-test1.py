@@ -18,6 +18,8 @@
 
 
 
-
 #http://otrohost-p3/api/v1/scraper/smu/checkpass/
-#http://[\w]+[-]+[\w]+/api/v[0-1]+/scraper/smu/[a-z]+/
+#http[s]*://[\w]+[-]+[\w]+/api/v[0-1]+/scraper/[\w]+/[a-z]+/
+
+#regex final
+#http[s]?://[\w]+[-]*[\w]+/api/v[\w]+/scraper/[\w]+[-]*[a-z]+/[a-z]+
