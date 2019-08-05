@@ -1,4 +1,4 @@
-course = 'Curso de platzi o merojandola'
+course = ' Curso de platzi o merojandola '
 my_string = 'Codigo Facilito plus'
 
 """Metodos de formato"""
@@ -15,5 +15,8 @@ count = result.count('o')#busca cuantas veces se repite un caracter
 new_string = result.replace('o','x')#remplace un caracter por otro
 new_string = result.split(' ')#combierte el string en una lista apartir de donde haya un espacio
 
+#nuevo = course.split(' ')
 
 print(new_string)
+
+print(course)
