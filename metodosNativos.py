@@ -8,9 +8,9 @@ def migratoryBirds(arr):
     for valor in lista2:
         resultado.append(arr.count(valor))
     
-    print(arr)
-    print(lista2)
-    print(resultado)
+    print("lista original: " + arr)
+    print("lista simplificada: " + lista2)
+    print("cantidad de veces q se repite cada num de lista simplificada: "+resultado)
 
 migratoryBirds(lista)
 
