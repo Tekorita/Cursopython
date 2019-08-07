@@ -32,5 +32,5 @@ jaguar = Jaguar()
 print(gato.cazar())
 print(jaguar.garras_retractiles)
 print(gato.terrestre)
-gato.nombre = "ffi"
+gato.nombre = "fifi"
 gato.mostrar_nombre()
