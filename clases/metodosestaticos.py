@@ -18,5 +18,6 @@ class Circulo:
 
 circulo_uno = Circulo(4)
 
+print(circulo_uno.pi())
 print(circulo_uno.area())
 print(Circulo.pi())

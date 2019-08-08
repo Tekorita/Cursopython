@@ -5,5 +5,4 @@ while lista != []:
     lista3.append(min(lista))
     lista.remove(min(lista))
     
-print("lista ordenada: "+str(lista3))
- 
+print(lista)

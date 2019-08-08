@@ -6,8 +6,10 @@ def superposicion(lista1, lista2):
                 resultado = "True"                
             else:
                 resultado = "False"
+            
+            print(resultado) 
 
-list1 = [1,2,3,4]
+list1 = [5,6,7,8]
 list2 = [5,6,7,8]
 
 superposicion(list1,list2)

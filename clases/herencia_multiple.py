@@ -1,5 +1,5 @@
 class Animal: #Clase Padre 1
-	@property
+	property
 	def terrestre(self):
 		return True
 
@@ -24,7 +24,7 @@ class Gato(Felino, Mascota): #PARA HACER HERENCIA MULTIPLE SE HEREDA VARIAS CLAS
 		self.cazar()
 
 class Jaguar(Felino):
-	pass
+	print("este es el jaguar")
 
 gato = Gato()
 jaguar = Jaguar()
