@@ -1,0 +1,38 @@
+#scrapers/apps/fda/fixtures
+[
+  {
+      "name": "fda",
+      "iso2_code": "MX",
+      "login_url": "https://spt.fahorro.com.mx/fahcolprd/index.php?mode=rp|login_user",
+      "logout_url": "https://spt.fahorro.com.mx/fahcolprd/index.php?mode=rp|login_prompt",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "es-419,es;q=0.9",
+        "Cache-Control": "max-age=0",
+        "Connection": "keep-alive",
+        "Content-Length": "234",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Host": "spt.fahorro.com.mx",
+        "Origin": "https://spt.fahorro.com.mx",
+        "Referer": "https://spt.fahorro.com.mx/fahcolprd/index.php?mode=rp|default&mcs_form=rp%7Clogin_prompt&modal_status=",
+        "Upgrade-Insecure-Requests": "1",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.87 Safari/537.36"
+      }
+  }
+]
+
+{
+  "Host": "spt.fahorro.com.mx",
+  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3",
+  "Origin": "https://spt.fahorro.com.mx",
+  "Referer": "https://spt.fahorro.com.mx/fahcolprd/index.php?mode=rp|login_prompt",
+  "Connection": "keep-alive",
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.87 Safari/537.36",
+  "Content-Type": "application/x-www-form-urlencoded",
+  "Cache-Control": "max-age=0",
+  "Content-Length": "185",
+  "Accept-Encoding": "gzip, deflate, br",
+  "Accept-Language": "es-419,es;q=0.9",
+  "Upgrade-Insecure-Requests": "1"
+}

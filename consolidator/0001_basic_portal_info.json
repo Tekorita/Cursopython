@@ -1,0 +1,153 @@
+#scrapers/apps/proconsumo/fixtures/0001_basic_portal_info.json
+
+[
+    {
+        "model": "base.portal",
+        "pk": 88,
+        "fields": {
+            "name": "proconsumo",
+            "iso2_code": "HN",
+            "properties": null,
+            "login_url": null,
+            "logout_url": null,
+            "validation": {
+                "ventas": {
+                        "fields": [
+                          {
+                            "name": "Codigo",
+                            "type": "string",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Nombre",
+                            "type": "string",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Codigo Cliente",
+                            "type": "string",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Cliente",
+                            "type": "string",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Canal",
+                            "type": "string",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Oficina Ventas",
+                            "type": "string",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Codigo Producto",
+                            "type": "integer",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Producto",
+                            "type": "string",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Linea",
+                            "type": "string",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Codigo de Barra",
+                            "type": "integer",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Unidades por Caja",
+                            "type": "string",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Fecha",
+                            "type": "string",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Vendedor",
+                            "type": "string",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Gira",
+                            "type": "string",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Destinatario",
+                            "type": "string",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Término de pago",
+                            "type": "string",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Lote",
+                            "type": "string",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Venta Bruta",
+                            "type": "number",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Venta Neta",
+                            "type": "number",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Cant Venta",
+                            "type": "integer",
+                            "format": "default"
+                          },
+                          {
+                            "name": "Cant Total",
+                            "type": "integer",
+                            "format": "default"
+                          },
+                          {
+                            "name": "",
+                            "type": "string",
+                            "format": "default"
+                          }
+                        ],
+                        "missingValues": [
+                          ""
+                        ]
+                }
+            },
+            "scraper_class": "ProConsumoScraper",
+            "transformer_class": "ProConsumoTransformer",  
+            "transformation": {
+                "ventas": [
+                    {"name": "Cliente","default": "Por definir"},
+                    {"name": "Fecha","column": 11},
+                    {"name": "Cadena","default": "cadena"},
+                    {"name": "Cod_Prod_Cadena","column": 6},
+                    {"name": "Descripcion_Prod_Cadena","column": 7},
+                    {"name": "Cod_Local","default": 1},
+                    {"name": "Descripcion_Local","default": "Local Proconsumo"},
+                    {"name": "Unidades","column": 20},
+                    {"name": "Valores_Costo","column":18},
+                    {"name": "Valores_Venta","column":18}
+                ]
+            },               
+            "headers": null,
+            "old_consolidation_support": false,
+            "chain": "Proconsumo HN"
+        }
+    }
+]
