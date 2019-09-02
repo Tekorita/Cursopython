@@ -9,5 +9,5 @@ def tablaDeMultiplicar(valor):
         resultado = valor * num
         print(str(valor)+" x "+str(num)+" = "+str(resultado))
 
-valor1 = int(input("Ingresa el numero de la tabla de multiplicar"))
+valor1 = int(input("Ingresa el numero de la tabla de multiplicar para hacer el calculo :)"))
 tablaDeMultiplicar(valor1)
