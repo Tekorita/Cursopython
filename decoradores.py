@@ -27,7 +27,7 @@ saluda()
 def decorador(is_valid):
 	def _decorador(func): #A #B=func
 		def before_action():
-			print("Vamos a ejecutar la funcion primero")
+			print("Vamos a ejecutar la funcion primero y luego hacemos lo que sigue")
 		def after_action():
 			print("Se ejecuto la funcion despues")
 
