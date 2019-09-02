@@ -12,7 +12,7 @@ valor1
 >>> 
 >>> #podemos modificar una clave
 ... 
->>> mi_diccionario['clave_3'] = 'NUEVO VALOR'
+>>> mi_diccionario['clave_3'] = 'NUEVO VALOR 3'
 >>> print (mi_diccionario)
 {'clave_1': 'valor1', 'clave_2': 2, 'clave_3': 'NUEVO VALOR'}
 >>> mi_diccionario = {'clave_1': 'valor1', 'clave_2': 2, 'clave_3': 5.67, (1, 6): [5, 6, 7]}
