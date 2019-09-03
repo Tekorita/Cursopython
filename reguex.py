@@ -11,7 +11,7 @@ x = re.search("^The", txt)
 if (x):
   print("YES! We have a match!")
 else:
-  print("No match")
+  print("No match not and not")
 
 
 #Funciones RegEx
