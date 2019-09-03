@@ -1,6 +1,6 @@
 class perro:
 
-    tipo = "canino"
+    tipo = "canino terrestre"
 
     def __init__(self,nombre,raza,edad,dueño):
         self.nombre = nombre
