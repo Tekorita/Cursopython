@@ -34,4 +34,4 @@ curl -X POST \
     ]
 }'
 
-#pytest scrapers/apps/consolidator/tests/consolidator_tests.py --pdb - s
+#pytest scrapers/apps/consolidator/tests/consolidator_tests.py --pdb -s
