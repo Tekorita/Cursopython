@@ -16,7 +16,7 @@ def sumas(valor1, valor2):
     print(calculo) 
 
 valor1 = int(input("Ingresa el valor1: "))
-valor2 = int(input("Ingresa el valor2: "))
+valor2 = int(input("Ingresa el valor3: "))
 
 sumas(valor1,valor2)
 
