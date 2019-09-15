@@ -15,7 +15,7 @@ print(resultado)
 mi_funcion = lambda valor_uno, valor_dos : valor_uno + valor_dos #ejemplo lambda #1
 formato = lambda sentencia : '{}?'.format(sentencia)
 no_valor = lambda : 10
-no_resultado = lambda : print('Deben de ejecutar una accion o proceso')
+no_resultado = lambda : print('Deben de ejecutar una accion')
 
 resultado = mi_funcion(2,2)
 resultado2 = formato('Puedes hacer esto uno pregunta')
