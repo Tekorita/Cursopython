@@ -4,7 +4,7 @@ try:
 	print(lista[9])
 except IndexError as ex:
 	print(ex)
-	print("No es posible obtener el valor en la lista o tupla")
+	print("No es posible obtener el valor en la lista")
 except ZeroDivisionError as ex:
 	print(ex)
 	print("no se puede dividir por cero")
