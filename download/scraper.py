@@ -25,7 +25,7 @@ class FDAScraper(BaseScraper):
 
     def preprocess_file(self, file_path, report_type, **kwargs):
         file_path_out = '%s.csv' % file_path.split('.')[0]
-        # get csv from xls file or files
+        # get csv from xls file
         FileServices.xls_to_csv_transform_file(
             file_path_in=file_path,
             file_path_out=file_path_out,
