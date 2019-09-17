@@ -14,7 +14,7 @@ valor1
 ... 
 >>> mi_diccionario['clave_3'] = 'NUEVO VALOR 3'
 >>> print (mi_diccionario)
-{'clave_1': 'valor1', 'clave_2': 2, 'clave_3': 'NUEVO VALOR'}
+{'clave_1': 'valor1', 'clave_2': 2, 'clave_3': 'NUEVO VALOR','hola':90}
 >>> mi_diccionario = {'clave_1': 'valor1', 'clave_2': 2, 'clave_3': 5.67, (1, 6): [5, 6, 7]}
 >>> print (mi_diccionario)
 {'clave_1': 'valor1', 'clave_2': 2, 'clave_3': 5.67, (1, 6): [5, 6, 7]}
