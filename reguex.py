@@ -170,7 +170,7 @@ print(x.string)
 
 #La expresión regular busca cualquier palabra que comience con una mayúscula "S":
 print("- Match -group")
-str = "The rain in Spain and Mexico"
+str = "The rain in Spain"
 x = re.search(r"\bS\w+", str)
 print(x.group())
 #Nota: Si no hay coincidencia, Nonese devolverá el valor , en lugar del Objeto de coincidencia.
