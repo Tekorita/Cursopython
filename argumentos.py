@@ -27,6 +27,6 @@ print(resultado)
 def suma2(**kwargs):
 	print(kwargs)
 
-resultado = suma2(nombre = 'David', edad = 28, estatura = 1.80, hombre = True)
+resultado = suma2(nombre = 'David Palma', edad = 28, estatura = 1.80, hombre = True)
 print(resultado)
 
