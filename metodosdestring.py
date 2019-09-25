@@ -1,5 +1,5 @@
 course = ' Curso de platzi'
-my_string = 'Codigo Facilito plus'
+my_string = 'Codigo Facilito'
 
 """Metodos de formato"""
 result = '{a} de {b}'.format(a=course, b=my_string)
