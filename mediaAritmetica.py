@@ -28,7 +28,7 @@ numero2 = 0
 
 while x < 2:
     while i < 4:
-        valor = int(input("Ingresa el valor para hacer el calculo o proceso"))
+        valor = int(input("Ingresa el valor"))
         lista[i] = valor
         i = i + 1
 
