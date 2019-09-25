@@ -1,4 +1,4 @@
-course = ' Curso de platzi o merojandola '
+course = ' Curso de platzi'
 my_string = 'Codigo Facilito plus'
 
 """Metodos de formato"""
