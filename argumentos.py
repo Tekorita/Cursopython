@@ -17,7 +17,7 @@ def suma1(*args):
 		resultado = resultado + valor
 	return resultado
 
-resultado = suma1(1,2,3,4,5,6,7,8)
+resultado = suma1(1,2,3,4,5,6,7,8,9)
 print(resultado)
 
 #tambien podemos trabajar con diccionarios y mostrar el nombre de las variables tambien
