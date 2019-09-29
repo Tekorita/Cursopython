@@ -32,7 +32,7 @@ class TestConsolidator:
     def test_consolidate(self, user_data, config_input):
         """
         Test rules:
-            * Check the structure of the consolidated output
+            * Check the structure of the consolidated output or intput
             * Sum of units, costs and sales of consolidated file must be equal to source file sums
             * Check de rows number (not necessarily equal to the input)
         """
