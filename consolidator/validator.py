@@ -25,7 +25,7 @@ class Validator:
     def __init__(self, portal):
         assert portal.validation, \
             'Validation config not exists. ' \
-            'Hint: Add data migration with appropiate config as JSON. ' \
+            'Hint: Add data migration with appropiate config as JSON and insert case scrapers. ' \
             'Manage command `infer_validator_cofig` is very useful for build config'
 
         self.portal = portal
