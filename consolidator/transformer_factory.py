@@ -45,4 +45,4 @@ class TransformerFactory:
         if portal.transformer_class:
             return eval(portal.transformer_class)(portal, client_id, *args, **kwargs)
 
-        raise NotImplementedError(f'Transformer class for {portal} not found')
+        raise NotImplementedError(f'Transformer class for {portal} not found or not exists')
