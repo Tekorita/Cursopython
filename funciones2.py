@@ -1,4 +1,4 @@
-def suma(valor_uno, valor_dos, valor_tres, valor_cuatro, valor_cinco):
+def suma(valor_uno, valor_dos, valor_tres, *args):
 	return valor_uno + valor_dos + valor_tres
 
 def division(valor_uno, valor_dos):
