@@ -14,7 +14,7 @@ resultado1 = suma(10, 20, 30, 60, 90)
 print(resultado1)
 
 resultado2 = division(100,10)
-resultado3 = division(valor_dos = 10, valor_uno = 100.9)
+resultado3 = division(valor_dos = 10, valor_uno = 100)
 resultado4 = multiplicacion(3, 5)
 
 resultado5 = multiples_valores()
