@@ -13,6 +13,8 @@ lista = [valor for valor in range(0, 101)]
 print(lista)
 
 lista_pares = [valor for valor in range(0, 101) if valor % 2 == 0 ]
+lista_2 = [valor for valor in range(0, 101) if valor % 2 == 0 ]
+lista_3 = [valor for valor in range(0, 101) if valor % 2 == 0 ]
 
 print(lista_pares)
 
