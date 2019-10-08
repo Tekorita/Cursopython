@@ -14,3 +14,9 @@ for input1, input2 in generador(1,2,3,4):
 
 for input3, input4 in generador(1,2,3):
 	print(valor_uno, valor_dos) 
+
+for input1, input2 in generador(1,2,3,4):
+	print(valor_uno, valor_dos)
+
+for input3, input4 in generador(1,2,3):
+	print(valor_uno, valor_dos) 
