@@ -6,7 +6,7 @@ def generador(*args):
 	for valor in args:
 		yield valor * 30, True #Un ejemplo
 
-for valor_uno, valor_dos in generador(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15):
+for valor_uno, valor_dos in generador(1,2,3,4,5,6,7,8,9,10):
 	print(valor_uno, valor_dos)
 
 for input1, input2 in generador(1,2,3,4):
