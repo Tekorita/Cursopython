@@ -11,8 +11,8 @@ def decorador(func):
     return funcionB
 
 @decorador
-def sumas(valor1, valor2):
-    calculo = valor1 + valor2
+def sumas(valor1, valor2, valor3):
+    calculo = valor1 + valor2 / valor3
     print(calculo) 
 
 valor1 = int(input("Ingresa el valor1: "))
