@@ -84,91 +84,195 @@ class FDAScraper(BaseScraper):
 
         return error_status_code
 
-    # def _download_stock(self, download):
-    #     download_date = download['dates'][0]
+#descarga siman farmacia
 
-    #     return DownloadStatusResult(
-    #         status=False,
-    #         error_status_code='error-stock-type-not-implemented',
-    #         category_id=download['category_id'],
-    #         report_type=TypeReport.STOCK,
-    #         date=download_date,
-    #     )
+import logging
+import os
+import pandas as pd
 
-#cuando me logueo
-Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-Content-Length: 234
-Content-Type: text/html; charset=UTF-8
-Date: Fri, 23 Aug 2019 20:20:17 GMT
-Expires: Thu, 19 Nov 1981 08:52:00 GMT
-Location: https://spt.fahorro.com.mx/fahcolprd/index.php?mode=rp|default&mcs_form=rp%7Clogin_prompt&modal_status=
-Pragma: no-cache
-Server: Microsoft-IIS/7.5
-Set-Cookie: 259b0c2ad1218404ad131c278608f217=%3AnJ.%25%7ELgmy%3AsYy%5BXJy+%28L6gc4ab%5BG%5E%29H; expires=Fri, 23-Aug-2019 20:40:17 GMT
-Set-Cookie: usr_id=u%2CNyy; expires=Fri, 06-Sep-2019 20:20:17 GMT
-X-Powered-By: PHP/5.2.9
-X-Powered-By: ASP.NET
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
-Accept-Encoding: gzip, deflate, br
-Accept-Language: es-419,es;q=0.9
-Cache-Control: max-age=0
-Connection: keep-alive
-Content-Length: 185
-Content-Type: application/x-www-form-urlencoded
-Cookie: usr_id=u%2CNyy; 259b0c2ad1218404ad131c278608f217=%3AnJ.%25%7ELgmy%3AsYy%5BXJy+%28L6gc4ab%5BG%5E%29H
-Host: spt.fahorro.com.mx
-Origin: https://spt.fahorro.com.mx
-Referer: https://spt.fahorro.com.mx/fahcolprd/index.php?mode=rp|login_prompt
-Sec-Fetch-Mode: navigate
-Sec-Fetch-Site: same-origin
-Sec-Fetch-User: ?1
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.87 Safari/537.36
+from scrapers.apps.base.base_scraper import BaseScraper
+from scrapers.apps.base.utils.file_services import FileServices
+from scrapers.apps.base.domain import (
+    TypeReport,
+    DownloadStatusResult,
+)
+from scrapers.apps.base.exceptions.scraper_exception import ScraperException
+from scrapers.apps.base.utils.request_services import RequestServices
+from scrapers.apps.base.utils.parsers import (
+    split_by_regex,
+    unescape_html_strings,
+)
+from scrapers.apps.locatel.services import (
+    find_headers_by_html,
+    save_in_store,
+    split_local_description,
+)
+from .properties import props
 
-https://spt.fahorro.com.mx/fahcolprd/index.php?estado_desc=YUCATAN&mundo=&producto_code=&division=&dda_id=LST-VAR-STK-SUC&mode=rp%7Cdisplay_results&mcs_form=LST-VAR-STK-SUC&modal_status=&form_fields=estado_desc%2Cproducto_code%2Cmundo%2Cdivision%2Cdda_id%2Cmode
+logger = logging.getLogger(__name__)
 
-    YUCATAN
-	QUERETARO
-	PUEBLA
-	DURANGO
-	MORELOS
-	TABASCO
-	COAHUILA
-	SAN LUIS POTOSI
-	ESTADO DE MEXICO
-	CIUDAD DE MEXICO
+    def __init__(self, portal, user_data, downloads=None, **kwargs):
+        super().__init__(portal, user_data, downloads, **kwargs)
+        self.request_services = RequestServices(self.session, self.portal.headers)
+        #self.last_update_need_login = False
 
-
-    def preprocess_file(self, file_path, report_type, **kwargs):
-        file_path_out = f'{os.path.splitext(file_path)[0]}.csv'
-        
-        if report_type == TypeReport.STOCK:
-            csv_files = []
-            decompress_folder = f'fda-stock-files-{self.client_id}-{self.portal.iso2_code}'
-            FileServices.create_directory(decompress_folder)           
-            self.zip_services.unzip_all(
-                file_name_zip=file_path,
-                destination=decompress_folder,
+    def _download_sales(self, download):
+        results = []
+        category_id = download['category_id']
+        #import pdb; pdb.set_trace()
+        for daily_date in download['dates']:
+            logger.info(f"sales download file for date: {daily_date}")
+            file_name = self.base_services.get_file_name(
+                category_id=category_id,
+                client_id=self.client_id,
+                portal_name=self.portal.name,
+                report_type=TypeReport.SALES,
+                start_date=daily_date,
+                end_date=daily_date,
+                ext='html',
             )
 
-            file_list = [
-                os.path.join(str(decompress_folder)+'/stock', r_file)
-                for r_file in os.listdir(str(decompress_folder)+'/stock')
-                if r_file.endswith(props['expected_ext_files'])
+            payload = self.base_services.get_dict_with_updated_values(
+                dictionary=props['sales_download_data'],
+                # Fecha1=daily_date,
+                # Fecha2=daily_date,
+            )
+
+            # import pdb; pdb.set_trace()
+            request_result = self.request_services.post(
+                url=props['download_url'],
+                headers=props['download_headers'],
+                data=payload,
+            )
+            #import pdb; pdb.set_trace()
+            if request_result.status:
+                response = request_result.get_property('response')
+                result = self.download_sales_file(
+                    begin_date=daily_date,
+                    end_date=daily_date,
+                    file_name=file_name,
+                    response=response,
+                    category_id=category_id,
+                    date_file=daily_date,
+                )
+
+            else:
+                error_status_code = request_result.get_error_status_code()
+                result = DownloadStatusResult.explode(
+                    status=False,
+                    error_status_code=error_status_code,
+                    category_id=category_id,
+                    drange=daily_date,
+                )
+            #import pdb; pdb.set_trace()
+            results.extend(result)
+
+        return results
+
+# curl -X POST \
+#  http://localhost:8001/api/v1/scraper/farmacia-siman/download/ \
+#  -H 'Content-Type: application/json' \
+#  -d '{
+#    "user_data": {
+#        "username": "genomma",
+#        "password": "Goicochea01",
+#        "country": "HN"
+#    },
+#    "downloads": [
+#        {
+#            "category_id": 0,
+#            "type": "ventas",
+#            "dates": [
+#                "2019-09-08",
+#                "2019-09-08"
+#            ]
+#        }
+#    ]
+# }'
+
+
+#Properties
+
+BASE_URL = 'https://www.farmaciasiman.me'
+props = {    
+    'headers_html': [
+        'Sucursal',
+        'Ciudad',
+        'Código',
+        'Descripción',
+        'Cantidad',
+        'Venta',
+    ],
+    'download_headers': {
+        'Accept': '*/*',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Accept-Language': 'es-419,es;q=0.9',
+        'Connection': 'keep-alive',
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'Host': 'www.farmaciasiman.me',
+        'Origin': 'https://www.farmaciasiman.me',
+        'Referer': 'https://www.farmaciasiman.me/farmacia/lab/vtas_lab_rango_fechas.php',
+        'Sec-Fetch-Mode': 'cors',
+        'Sec-Fetch-Site': 'same-origin',
+        'User-Agent': (
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 ' 
+            '(KHTML, like Gecko) Chrome/76.0.3809.87 Safari/537.36'
+        ),
+        'X-Requested-With': 'XMLHttpRequest',
+    },
+    'download_url': 'https://www.farmaciasiman.me/farmacia/lab/vtas_lab_rango_fechas2.php',
+    'sales_download_data': {
+        'Fecha1': '08/09/2019',
+        'Fecha2': '08/09/2019',
+        'VentaTipo': '5',
+        'Ciudad': 'TODAS',
+        'Sucursal': 'TODAS',
+        'Prov_ID': '0159',
+        'Producto': '1',
+    },
+}
+
+# curl -X POST \
+#  http://localhost:8001/api/v1/scraper/farmacia-siman/download/ \
+#  -H 'Content-Type: application/json' \
+#  -d '{
+#    "user_data": {
+#        "username": "genomma",
+#        "password": "Goicochea01",
+#        "country": "HN"
+#    },
+#    "downloads": [
+#        {
+#            "category_id": 0,
+#            "type": "ventas",
+#            "dates": [
+#                "2019-09-08",
+#                "2019-09-08"
+#            ]
+#        }
+#    ]
+# }'
+
+
+curl -X POST \
+  http://stage.b2b.scrapers.instoreview.cl:82/api/v1/scraper/farmacia-siman/download/ \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "user_data": {
+        "username": "genomma",
+        "password": "Goicochea01",
+        "country": "HN",
+        "rut": null,
+        "client_id": 0
+    },
+    "downloads": [
+        {
+            "category_id": 0,
+            "type": "ventas",
+            "dates": [
+                "2019-09-07",
+                "2019-09-08"
             ]
-            
-            for idx, extracted_file in enumerate(file_list):
-                data_xls = pd.read_excel(extracted_file, index_col=None)
-                data_xls.to_csv(str(decompress_folder)+ f'/stock/{idx}.csv', encoding='utf-8', index=False,)  # NOQA
-                csv_file = str(decompress_folder)+f'/stock/{idx}.csv'
-                csv_files.append(csv_file)
-
-            file_path_out = FileServices.merge_csv(
-                file_paths=csv_files,
-                final_path=file_path_out,
-                remove_source_files=True,
-            )
-
-            FileServices.remove_folder(decompress_folder)
-            
-        return file_path_out
+        }
+    ]
+}'

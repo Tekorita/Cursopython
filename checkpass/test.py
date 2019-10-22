@@ -17,3 +17,14 @@ curl -X POST \
     "password": "*cx4882mx",
     "country": "MX"
 }'
+
+
+curl -X POST \
+  http://localhost:8001/api/v1/scraper/farmacia-siman/checkpass/ \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache,no-cache,no-cache,no-cache' \
+  -d '{
+    "username": "genomma",
+    "password": "Goicochea01",
+    "country": "HN"
+}'

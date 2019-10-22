@@ -1,0 +1,252 @@
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd ">
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+
+<!--  favicon -->
+<link rel="shortcut icon" href="../style/mstr/images/favicon.ico" type="image/x-icon" />
+<!--  end favicon -->
+
+<title>Página de error. MicroStrategy</title>
+
+
+
+
+
+
+
+
+<script type="text/javascript" >
+    var isQuickSearchEnabled = false;
+
+    // Set common config properties for most applications
+    mstrConfig = {
+        taskURL: 'taskProc',
+        thousandsSep: ',',
+        decimalSep: '.',
+        listSep: ',',
+        onMobileDevice: false,
+        webVersion: '409271983',
+        
+        isUsherAuthVisible: false,
+        isEdgeModeEnabled: '1' == '1',
+        isLinkJSEnabled: '0' == '1',
+        serverName: '10.100.1.72',
+        projectName: 'Prisma',
+        serverPort: '0',
+        servletState: '-*-S07fg8AuAlzN20iXnIH40YLVkG4=.Prisma.*-nAgk*-k*-2hz7Dj3AZ_',
+        authMode: '1',
+        browserLang: '',
+        features: {
+        	"create-object":true,"enable-login-editor":true
+        },
+        lastMsgKey: '1479543314',
+        isQuickSearchEngineEnabled: isQuickSearchEnabled,
+        enableQuickSearchPref: isQuickSearchEnabled && '1' == '1',
+        enableSearchAutoComplete: '1' == '1',
+        searchAutoCompleteDelay: '200' || 200,
+        addTimeStampToPreventCaching: '0' == '1',
+        useNamespaceInCookie: false,
+        
+			showPreviews: '1' == '1',
+		
+    };
+
+    
+        
+        
+            mstrConfig.searchProps = {
+                rootFolderType: 39, 
+                isMiniSearchBox: false,
+                showAsPopup: false,
+                maxSearchResults: 50 || 50,
+                allowedObjectTypesData: [].concat([{t: 12, d:'Atributo'},{t: 257, d:'Grupo Personalizado'},{t: 14081, d:'Tablero/documento'},{t: 256, d:'Filtrar'},{t: 8, d:'Carpeta'},{t: 14080, d:'Documento HTML'},{t: 4, d:'Indicador'},{t: 10, d:'Selección Dinámica'},{t: 3, d:'Informe'},{t: 2, d:'Plantilla'}])
+            };
+
+        
+    
+</script>
+<script type='text/javascript'>
+// Append application specific config.
+mstrConfig.simpleDialog = false;
+
+
+	mstrConfig.showPreviews = '1' == '1';
+
+
+window.mstrAppOnSessionExpired = function() {
+    var f = document.getElementById('formRefresh');
+    if (f) {
+        submitForm(f);
+    }
+};
+
+window.isEdgeModeEnabled = '1' == '1';
+
+window.mstrApp = {
+		name: 'mstrWeb',		
+        taskURL: 'taskProc',
+        
+        mstrDescs: {"descriptors":[{"key":"mstrWeb.521","v":"Mayor que"},{"key":"mstrWeb.522","v":"Mayor o igual que"},{"key":"mstrWeb.523","v":"Menor que"},{"key":"mstrWeb.524","v":"Menor o igual que"},{"key":"mstrWeb.525","v":"Como"},{"key":"mstrWeb.526","v":"No como"},{"key":"mstrWeb.529","v":"El(los) primero(s)"},{"key":"mstrWeb.530","v":"El(los) último(s)"},{"key":"mstrWeb.534","v":"Todas las selecciones"},{"key":"mstrWeb.535","v":"Cualquier selección"},{"key":"mstrWeb.546","v":"Calificar"},{"key":"mstrWeb.547","v":"Seleccionar"},{"key":"mstrWeb.587","v":"En"},{"key":"mstrWeb.686","v":"Contiene"},{"key":"mstrWeb.687","v":"Que comience con"},{"key":"mstrWeb.688","v":"Termina en"},{"key":"mstrWeb.696","v":"Entre"},{"key":"mstrWeb.746","v":"No entre"},{"key":"mstrWeb.1101","v":"Excluir el más alto"},{"key":"mstrWeb.1102","v":"Excluir el más bajo"},{"key":"mstrWeb.1956","v":"Enero"},{"key":"mstrWeb.1957","v":"Febrero"},{"key":"mstrWeb.1958","v":"Marzo"},{"key":"mstrWeb.1959","v":"Abril"},{"key":"mstrWeb.1960","v":"Mayo"},{"key":"mstrWeb.1961","v":"Junio"},{"key":"mstrWeb.1962","v":"Julio"},{"key":"mstrWeb.1963","v":"Agosto"},{"key":"mstrWeb.1964","v":"Septiembre"},{"key":"mstrWeb.1965","v":"Octubre"},{"key":"mstrWeb.1966","v":"Noviembre"},{"key":"mstrWeb.1967","v":"Diciembre"},{"key":"mstrWeb.2171","v":"Por defecto"},{"key":"mstrWeb.2202","v":"Es nula"},{"key":"mstrWeb.2203","v":"No es nula"},{"key":"mstrWeb.2204","v":"No en"},{"key":"mstrWeb.2219","v":"En la lista"},{"key":"mstrWeb.2220","v":"No está en la lista"},{"key":"mstrWeb.2784","v":"No contiene"},{"key":"mstrWeb.2785","v":"No inicie con"},{"key":"mstrWeb.2786","v":"No termine con"},{"key":"mstrWeb.2795","v":"Es igual a"},{"key":"mstrWeb.2796","v":"Es diferente a"},{"key":"mstrWeb.3086","v":"Indicador"},{"key":"mstrWeb.3344","v":"Informe"},{"key":"mstrWeb.3852","v":"Ene"},{"key":"mstrWeb.3853","v":"Feb"},{"key":"mstrWeb.3854","v":"Mar"},{"key":"mstrWeb.3855","v":"Abr"},{"key":"mstrWeb.3856","v":"May"},{"key":"mstrWeb.3857","v":"Jun"},{"key":"mstrWeb.3858","v":"Jul"},{"key":"mstrWeb.3859","v":"Ago"},{"key":"mstrWeb.3860","v":"Sep"},{"key":"mstrWeb.3861","v":"Oct"},{"key":"mstrWeb.3862","v":"Nov"},{"key":"mstrWeb.3863","v":"Dic"},{"key":"mstrWeb.3945","v":"Incluir"},{"key":"mstrWeb.3946","v":"Excluir"},{"key":"mstrWeb.4406","v":"El menor %"},{"key":"mstrWeb.4407","v":"El mayor %"},{"key":"mstrWeb.5282","v":"Y"},{"key":"mstrWeb.5283","v":"OR"},{"key":"mstrWeb.5924","v":"Y NO"},{"key":"mstrWeb.5925","v":"O NO"},{"key":"mstrWeb.6076","v":"un valor entero"},{"key":"mstrWeb.6077","v":"un valor numérico"},{"key":"mstrWeb.6078","v":"Este campo es obligatorio."},{"key":"mstrWeb.6079","v":"Este campo debe ser # entre ## y ###."},{"key":"mstrWeb.6080","v":"Este campo debe ser # menor o igual que ###."},{"key":"mstrWeb.6081","v":"Este campo debe ser # mayor o igual que ##."},{"key":"mstrWeb.6082","v":"No se pudo realizar la validación de la expresión normal para este campo."},{"key":"mstrWeb.7899","v":"Este campo contiene caracteres no válidos para #"},{"key":"mstrWeb.7900","v":"Este campo contiene una cadena de fecha/hora no válida"},{"key":"mstrWeb.7901","v":"Este campo contiene un valor numérico con formato incorrecto"},{"key":"mstrWeb.7902","v":"Uno de los valores (#) en esta lista no es válido"},{"key":"mstrWeb.7903","v":"un valor de fecha/hora"},{"key":"mstrWeb.9379","v":"Domingo"},{"key":"mstrWeb.9380","v":"Lunes"},{"key":"mstrWeb.9381","v":"Martes"},{"key":"mstrWeb.9382","v":"Miércoles"},{"key":"mstrWeb.9383","v":"Jueves"},{"key":"mstrWeb.9384","v":"Viernes"},{"key":"mstrWeb.9385","v":"Sábado"},{"key":"mstrWeb.12298","v":"NOT"},{"key":"mstrWeb.13889","v":"Entre más bajos"},{"key":"mstrWeb.13890","v":"Entre mayores"},{"key":"mstrWeb.13896","v":"Clasificación entre más bajos"},{"key":"mstrWeb.13897","v":"Clasificación entre mayores"},{"key":"mstrWeb.521","v":"Mayor que"},{"key":"mstrWeb.522","v":"Mayor o igual que"},{"key":"mstrWeb.523","v":"Menor que"},{"key":"mstrWeb.524","v":"Menor o igual que"},{"key":"mstrWeb.525","v":"Como"},{"key":"mstrWeb.526","v":"No como"},{"key":"mstrWeb.529","v":"El(los) primero(s)"},{"key":"mstrWeb.530","v":"El(los) último(s)"},{"key":"mstrWeb.534","v":"Todas las selecciones"},{"key":"mstrWeb.535","v":"Cualquier selección"},{"key":"mstrWeb.546","v":"Calificar"},{"key":"mstrWeb.547","v":"Seleccionar"},{"key":"mstrWeb.587","v":"En"},{"key":"mstrWeb.686","v":"Contiene"},{"key":"mstrWeb.687","v":"Que comience con"},{"key":"mstrWeb.688","v":"Termina en"},{"key":"mstrWeb.696","v":"Entre"},{"key":"mstrWeb.707","v":"Días"},{"key":"mstrWeb.710","v":"Meses"},{"key":"mstrWeb.746","v":"No entre"},{"key":"mstrWeb.871","v":"Mes"},{"key":"mstrWeb.872","v":"Día"},{"key":"mstrWeb.873","v":"Año"},{"key":"mstrWeb.1101","v":"Excluir el más alto"},{"key":"mstrWeb.1102","v":"Excluir el más bajo"},{"key":"mstrWeb.1442","v":"Aceptar"},{"key":"mstrWeb.1956","v":"Enero"},{"key":"mstrWeb.1957","v":"Febrero"},{"key":"mstrWeb.1958","v":"Marzo"},{"key":"mstrWeb.1959","v":"Abril"},{"key":"mstrWeb.1960","v":"Mayo"},{"key":"mstrWeb.1961","v":"Junio"},{"key":"mstrWeb.1962","v":"Julio"},{"key":"mstrWeb.1963","v":"Agosto"},{"key":"mstrWeb.1964","v":"Septiembre"},{"key":"mstrWeb.1965","v":"Octubre"},{"key":"mstrWeb.1966","v":"Noviembre"},{"key":"mstrWeb.1967","v":"Diciembre"},{"key":"mstrWeb.2052","v":"Fecha"},{"key":"mstrWeb.2140","v":"Cancelar"},{"key":"mstrWeb.2170","v":"Hora"},{"key":"mstrWeb.2171","v":"Por defecto"},{"key":"mstrWeb.2202","v":"Es nula"},{"key":"mstrWeb.2203","v":"No es nula"},{"key":"mstrWeb.2204","v":"No en"},{"key":"mstrWeb.2219","v":"En la lista"},{"key":"mstrWeb.2220","v":"No está en la lista"},{"key":"mstrWeb.2784","v":"No contiene"},{"key":"mstrWeb.2785","v":"No inicie con"},{"key":"mstrWeb.2786","v":"No termine con"},{"key":"mstrWeb.2795","v":"Es igual a"},{"key":"mstrWeb.2796","v":"Es diferente a"},{"key":"mstrWeb.3086","v":"Indicador"},{"key":"mstrWeb.3344","v":"Informe"},{"key":"mstrWeb.3852","v":"Ene"},{"key":"mstrWeb.3853","v":"Feb"},{"key":"mstrWeb.3854","v":"Mar"},{"key":"mstrWeb.3855","v":"Abr"},{"key":"mstrWeb.3856","v":"May"},{"key":"mstrWeb.3857","v":"Jun"},{"key":"mstrWeb.3858","v":"Jul"},{"key":"mstrWeb.3859","v":"Ago"},{"key":"mstrWeb.3860","v":"Sep"},{"key":"mstrWeb.3861","v":"Oct"},{"key":"mstrWeb.3862","v":"Nov"},{"key":"mstrWeb.3863","v":"Dic"},{"key":"mstrWeb.3945","v":"Incluir"},{"key":"mstrWeb.3946","v":"Excluir"},{"key":"mstrWeb.4406","v":"El menor %"},{"key":"mstrWeb.4407","v":"El mayor %"},{"key":"mstrWeb.5282","v":"Y"},{"key":"mstrWeb.5283","v":"OR"},{"key":"mstrWeb.5924","v":"Y NO"},{"key":"mstrWeb.5925","v":"O NO"},{"key":"mstrWeb.6076","v":"un valor entero"},{"key":"mstrWeb.6077","v":"un valor numérico"},{"key":"mstrWeb.6078","v":"Este campo es obligatorio."},{"key":"mstrWeb.6079","v":"Este campo debe ser # entre ## y ###."},{"key":"mstrWeb.6080","v":"Este campo debe ser # menor o igual que ###."},{"key":"mstrWeb.6081","v":"Este campo debe ser # mayor o igual que ##."},{"key":"mstrWeb.6082","v":"No se pudo realizar la validación de la expresión normal para este campo."},{"key":"mstrWeb.7899","v":"Este campo contiene caracteres no válidos para #"},{"key":"mstrWeb.7900","v":"Este campo contiene una cadena de fecha/hora no válida"},{"key":"mstrWeb.7901","v":"Este campo contiene un valor numérico con formato incorrecto"},{"key":"mstrWeb.7902","v":"Uno de los valores (#) en esta lista no es válido"},{"key":"mstrWeb.7903","v":"un valor de fecha/hora"},{"key":"mstrWeb.9379","v":"Domingo"},{"key":"mstrWeb.9380","v":"Lunes"},{"key":"mstrWeb.9381","v":"Martes"},{"key":"mstrWeb.9382","v":"Miércoles"},{"key":"mstrWeb.9383","v":"Jueves"},{"key":"mstrWeb.9384","v":"Viernes"},{"key":"mstrWeb.9385","v":"Sábado"},{"key":"mstrWeb.9423","v":"Hoy"},{"key":"mstrWeb.9424","v":"más"},{"key":"mstrWeb.9425","v":"menos"},{"key":"mstrWeb.12298","v":"NOT"},{"key":"mstrWeb.13844","v":"Fecha dinámica"},{"key":"mstrWeb.13889","v":"Entre más bajos"},{"key":"mstrWeb.13890","v":"Entre mayores"},{"key":"mstrWeb.13896","v":"Clasificación entre más bajos"},{"key":"mstrWeb.13897","v":"Clasificación entre mayores"},{"key":"mstrWeb.2","v":"Informes compartidos"},{"key":"mstrWeb.3","v":"Mis informes"},{"key":"mstrWeb.17","v":"Nombre de usuario"},{"key":"mstrWeb.18","v":"Contraseña"},{"key":"mstrWeb.26","v":"Iniciar sesión"},{"key":"mstrWeb.60","v":"Propietario"},{"key":"mstrWeb.61","v":"Modificado"},{"key":"mstrWeb.96","v":"Error"},{"key":"mstrWeb.97","v":"Ejecutando..."},{"key":"mstrWeb.118","v":"Guardar"},{"key":"mstrWeb.122","v":"Columnas"},{"key":"mstrWeb.168","v":"Visualizar:"},{"key":"mstrWeb.218","v":"No"},{"key":"mstrWeb.219","v":"Sí"},{"key":"mstrWeb.221","v":"Cancelar"},{"key":"mstrWeb.271","v":"Altura:"},{"key":"mstrWeb.272","v":"Ancho:"},{"key":"mstrWeb.294","v":"Entre"},{"key":"mstrWeb.308","v":"y"},{"key":"mstrWeb.517","v":"Indicador"},{"key":"mstrWeb.520","v":"Exactamente"},{"key":"mstrWeb.531","v":"Agregar"},{"key":"mstrWeb.547","v":"Seleccionar"},{"key":"mstrWeb.628","v":"Guardar como"},{"key":"mstrWeb.629","v":"Borrar"},{"key":"mstrWeb.663","v":"Crear carpeta"},{"key":"mstrWeb.686","v":"Contiene"},{"key":"mstrWeb.687","v":"Que comience con"},{"key":"mstrWeb.688","v":"Termina en"},{"key":"mstrWeb.694","v":"Creado"},{"key":"mstrWeb.698","v":"Creado por cualquier usuario"},{"key":"mstrWeb.699","v":"Creado sólo por mí"},{"key":"mstrWeb.707","v":"Días"},{"key":"mstrWeb.708","v":"Horas"},{"key":"mstrWeb.709","v":"Años"},{"key":"mstrWeb.710","v":"Meses"},{"key":"mstrWeb.714","v":"Semanas"},{"key":"mstrWeb.767","v":"Modificar"},{"key":"mstrWeb.945","v":"Nombre"},{"key":"mstrWeb.955","v":"Coreano"},{"key":"mstrWeb.959","v":"Por defecto"},{"key":"mstrWeb.1050","v":"Ubicación"},{"key":"mstrWeb.1058","v":"Anterior"},{"key":"mstrWeb.1059","v":"Siguiente"},{"key":"mstrWeb.1088","v":"Editar"},{"key":"mstrWeb.1107","v":"Nivel del informe"},{"key":"mstrWeb.1143","v":"Ayuda"},{"key":"mstrWeb.1152","v":"Subir un nivel"},{"key":"mstrWeb.1154","v":"Descripción:"},{"key":"mstrWeb.1281","v":"Filtro"},{"key":"mstrWeb.1388","v":"Cambiar nombre"},{"key":"mstrWeb.1441","v":"Si la pista no le ayuda a recordar su contraseña, póngase en contacto con el administrador del sistema para restablecerla."},{"key":"mstrWeb.1442","v":"Aceptar"},{"key":"mstrWeb.1763","v":"Borrar Todo"},{"key":"mstrWeb.1825","v":"Explorar"},{"key":"mstrWeb.1918","v":"Formato"},{"key":"mstrWeb.1947","v":"Verificación LDAP"},{"key":"mstrWeb.1948","v":"Verificación de identidad de base de datos"},{"key":"mstrWeb.1952","v":"Todos los objetos"},{"key":"mstrWeb.1994","v":"Agregar condición"},{"key":"mstrWeb.2036","v":"Muestra:"},{"key":"mstrWeb.2037","v":"ABCabc"},{"key":"mstrWeb.2044","v":"Números negativos"},{"key":"mstrWeb.2046","v":"Posiciones decimales"},{"key":"mstrWeb.2047","v":"Símbolo de moneda"},{"key":"mstrWeb.2048","v":"Posición de moneda"},{"key":"mstrWeb.2049","v":"Utilizar separador de Miles"},{"key":"mstrWeb.2050","v":"Fijo"},{"key":"mstrWeb.2051","v":"Moneda"},{"key":"mstrWeb.2052","v":"Fecha"},{"key":"mstrWeb.2053","v":"Porcentaje"},{"key":"mstrWeb.2054","v":"Fracción"},{"key":"mstrWeb.2055","v":"Científico"},{"key":"mstrWeb.2056","v":"Personalizado"},{"key":"mstrWeb.2057","v":"Ninguno"},{"key":"mstrWeb.2058","v":"TODOS"},{"key":"mstrWeb.2060","v":"Color:"},{"key":"mstrWeb.2065","v":"Alineación de texto"},{"key":"mstrWeb.2067","v":"Centrar"},{"key":"mstrWeb.2068","v":"Justificar"},{"key":"mstrWeb.2070","v":"Ajustar texto"},{"key":"mstrWeb.2102","v":"Cerrar"},{"key":"mstrWeb.2105","v":"Grupo Personalizado"},{"key":"mstrWeb.2107","v":"## elementos encontrados"},{"key":"mstrWeb.2116","v":"Formato"},{"key":"mstrWeb.2133","v":"Personalizado:"},{"key":"mstrWeb.2140","v":"Cancelar"},{"key":"mstrWeb.2148","v":"Atributo"},{"key":"mstrWeb.2154","v":"Indicador:"},{"key":"mstrWeb.2156","v":"Agregar"},{"key":"mstrWeb.2170","v":"Hora"},{"key":"mstrWeb.2172","v":"Fuente:"},{"key":"mstrWeb.2178","v":"Tamaño"},{"key":"mstrWeb.2182","v":"Derecha con espacio"},{"key":"mstrWeb.2183","v":"Izquierda con espacio"},{"key":"mstrWeb.2193","v":"Centrar"},{"key":"mstrWeb.2194","v":"Izquierda"},{"key":"mstrWeb.2195","v":"Derecha"},{"key":"mstrWeb.2210","v":"Vacío"},{"key":"mstrWeb.2211","v":"Nombre:"},{"key":"mstrWeb.2213","v":"Indicador nuevo"},{"key":"mstrWeb.2231","v":"7/4"},{"key":"mstrWeb.2232","v":"07/04"},{"key":"mstrWeb.2233","v":"7/4/98"},{"key":"mstrWeb.2234","v":"07/04/98"},{"key":"mstrWeb.2235","v":"07/04/1998"},{"key":"mstrWeb.2236","v":"7 de Abril"},{"key":"mstrWeb.2237","v":"7 de Abril de 98"},{"key":"mstrWeb.2238","v":"Abril de 98"},{"key":"mstrWeb.2239","v":"Abril de 98"},{"key":"mstrWeb.2240","v":"Abril 1998"},{"key":"mstrWeb.2241","v":"7/4/98 15:41"},{"key":"mstrWeb.2242","v":"7/4/98 3:41 PM"},{"key":"mstrWeb.2243","v":"Abril 7, 1998"},{"key":"mstrWeb.2244","v":"15:41"},{"key":"mstrWeb.2245","v":"3:41 PM"},{"key":"mstrWeb.2246","v":"15:41:46"},{"key":"mstrWeb.2247","v":"3:41:46 PM"},{"key":"mstrWeb.2248","v":"07/04/98 3:41 PM"},{"key":"mstrWeb.2250","v":"07/04/98 15:41"},{"key":"mstrWeb.2256","v":"Inicio"},{"key":"mstrWeb.2257","v":"Últimos"},{"key":"mstrWeb.2258","v":"Ninguno"},{"key":"mstrWeb.2259","v":"Con guiones"},{"key":"mstrWeb.2260","v":"Con puntos"},{"key":"mstrWeb.2261","v":"Muy fino"},{"key":"mstrWeb.2262","v":"Fino"},{"key":"mstrWeb.2264","v":"Grueso"},{"key":"mstrWeb.2296","v":"Utilizar valor por defecto"},{"key":"mstrWeb.2378","v":"General"},{"key":"mstrWeb.2397","v":"Aceptar"},{"key":"mstrWeb.2398","v":"Aplicar"},{"key":"mstrWeb.2399","v":"Cancelar"},{"key":"mstrWeb.2400","v":"Guardar"},{"key":"mstrWeb.2412","v":"Por defecto"},{"key":"mstrWeb.2509","v":"Barra de herramientas"},{"key":"mstrWeb.2699","v":"Minutos"},{"key":"mstrWeb.2718","v":"Negrita"},{"key":"mstrWeb.2719","v":"Cursiva"},{"key":"mstrWeb.2787","v":"Porcentaje de \'##\'"},{"key":"mstrWeb.2788","v":"Orden de \'##\'"},{"key":"mstrWeb.2869","v":"Formato"},{"key":"mstrWeb.2883","v":"Margen"},{"key":"mstrWeb.2884","v":"Control de texto"},{"key":"mstrWeb.2885","v":"Relleno"},{"key":"mstrWeb.2886","v":"Bordes"},{"key":"mstrWeb.2901","v":"Cargando..."},{"key":"mstrWeb.2919","v":"Insertar"},{"key":"mstrWeb.2923","v":"Forma"},{"key":"mstrWeb.2968","v":"Filas"},{"key":"mstrWeb.3059","v":"Estilo:"},{"key":"mstrWeb.3060","v":"Efectos:"},{"key":"mstrWeb.3061","v":"Subrayado"},{"key":"mstrWeb.3062","v":"Tachado"},{"key":"mstrWeb.3063","v":"Color:"},{"key":"mstrWeb.3167","v":"Guardar como"},{"key":"mstrWeb.3178","v":"Guardar en:"},{"key":"mstrWeb.3179","v":"Confirmar sobrescritura"},{"key":"mstrWeb.3245","v":"Crear carpeta nueva"},{"key":"mstrWeb.3273","v":"Nivel"},{"key":"mstrWeb.3291","v":"CREAR"},{"key":"mstrWeb.3324","v":"Transformación"},{"key":"mstrWeb.3326","v":"Por columnas"},{"key":"mstrWeb.3327","v":"Por filas"},{"key":"mstrWeb.3329","v":"Total General"},{"key":"mstrWeb.3336","v":"## se ha guardado correctamente."},{"key":"mstrWeb.3364","v":"Propietario:"},{"key":"mstrWeb.3366","v":"Modificado:"},{"key":"mstrWeb.3377","v":"Objeto"},{"key":"mstrWeb.3380","v":"Introduzca un nombre válido."},{"key":"mstrWeb.3389","v":"Vista Preliminar"},{"key":"mstrWeb.3397","v":"Duplicar"},{"key":"mstrWeb.3413","v":"Seleccionar conjunto de datos"},{"key":"mstrWeb.3414","v":"Seleccione el informe del conjunto de datos a continuación"},{"key":"mstrWeb.3416","v":"Cancelar"},{"key":"mstrWeb.3433","v":"Fuente"},{"key":"mstrWeb.3434","v":"Número"},{"key":"mstrWeb.3435","v":"Alineación"},{"key":"mstrWeb.3436","v":"Color y líneas"},{"key":"mstrWeb.3440","v":"Normal"},{"key":"mstrWeb.3441","v":"Negrita Cursiva"},{"key":"mstrWeb.3479","v":"Gráfico"},{"key":"mstrWeb.3526","v":"Inicio"},{"key":"mstrWeb.3527","v":"Últimos"},{"key":"mstrWeb.3528","v":"Izquierda"},{"key":"mstrWeb.3529","v":"Derecha"},{"key":"mstrWeb.3604","v":"Rojo"},{"key":"mstrWeb.3605","v":"Tono"},{"key":"mstrWeb.3606","v":"Verde"},{"key":"mstrWeb.3607","v":"Saturación"},{"key":"mstrWeb.3608","v":"Azul"},{"key":"mstrWeb.3609","v":"Brillo"},{"key":"mstrWeb.3651","v":"Copia de ##"},{"key":"mstrWeb.3691","v":"Horizontal"},{"key":"mstrWeb.3692","v":"Vertical"},{"key":"mstrWeb.3693","v":"(ninguno)"},{"key":"mstrWeb.3695","v":"Copiar"},{"key":"mstrWeb.3905","v":"Fondo"},{"key":"mstrWeb.4046","v":"Primer"},{"key":"mstrWeb.4049","v":"Último"},{"key":"mstrWeb.4326","v":"Distingue entre mayúsculas y minúsculas"},{"key":"mstrWeb.4354","v":"Seleccionar informe de Intelligent Cube"},{"key":"mstrWeb.4380","v":"Seleccionar cubo MDX"},{"key":"mstrWeb.4381","v":"Orígenes de Datos"},{"key":"mstrWeb.4507","v":"## elementos siguientes..."},{"key":"mstrWeb.4508","v":"## elementos anteriores..."},{"key":"mstrWeb.4531","v":"Automático"},{"key":"mstrWeb.4561","v":"Todas las funciones"},{"key":"mstrWeb.4565","v":"Seleccione una categoría:"},{"key":"mstrWeb.4596","v":"Formato..."},{"key":"mstrWeb.4601","v":"Horizontal"},{"key":"mstrWeb.4778","v":"Elemento"},{"key":"mstrWeb.4786","v":"Degradados..."},{"key":"mstrWeb.4788","v":"Nivel"},{"key":"mstrWeb.4996","v":"Nuevo"},{"key":"mstrWeb.5156","v":"-90 grados"},{"key":"mstrWeb.5159","v":"Dirección del texto:"},{"key":"mstrWeb.5217","v":"Selección Dinámica de calificación de atributo"},{"key":"mstrWeb.5218","v":"Lista de elementos de atributo"},{"key":"mstrWeb.5219","v":"Selección Dinámica de Calificación del Indicador"},{"key":"mstrWeb.5220","v":"Selección Dinámica de objeto"},{"key":"mstrWeb.5221","v":"Selección Dinámica de un valor"},{"key":"mstrWeb.5298","v":"Seleccionar un objeto"},{"key":"mstrWeb.5362","v":"Mover a la Izquierda"},{"key":"mstrWeb.5363","v":"Mover a la Derecha"},{"key":"mstrWeb.5424","v":"Función:"},{"key":"mstrWeb.5547","v":"Selección dinámica de calificaciones de jerarquías"},{"key":"mstrWeb.5674","v":"Cargando..."},{"key":"mstrWeb.5688","v":"Mostrar fechas"},{"key":"mstrWeb.5728","v":"Confirmar almacenamiento"},{"key":"mstrWeb.5811","v":"Detalles..."},{"key":"mstrWeb.5878","v":"Ir a:"},{"key":"mstrWeb.5891","v":"Guardar"},{"key":"mstrWeb.5895","v":"Agrupar condiciones"},{"key":"mstrWeb.5896","v":"Desagrupar condiciones"},{"key":"mstrWeb.5923","v":"en"},{"key":"mstrWeb.5972","v":"## de ### páginas"},{"key":"mstrWeb.5976","v":"Borrar formato"},{"key":"mstrWeb.6013","v":"Descripción"},{"key":"mstrWeb.6079","v":"Este campo debe ser # entre ## y ###."},{"key":"mstrWeb.6149","v":"Seleccionar elementos"},{"key":"mstrWeb.6223","v":"Mostrar todo"},{"key":"mstrWeb.6571","v":"Explorar..."},{"key":"mstrWeb.7209","v":"Ya existe el nombre"},{"key":"mstrWeb.7558","v":"Propiedades"},{"key":"mstrWeb.7773","v":"segundos"},{"key":"mstrWeb.7833","v":"Más colores"},{"key":"mstrWeb.7834","v":"Menos colores"},{"key":"mstrWeb.7848","v":"Hex"},{"key":"mstrWeb.7882","v":"Introduzca un valor de color HEXADECIMAL de 6 dígitos en el formato: #xxxxxx."},{"key":"mstrWeb.7883","v":"Introduzca un número entero entre ## y ###."},{"key":"mstrWeb.7919","v":"Editor de grupos personalizados"},{"key":"mstrWeb.7920","v":"Escriba el nombre del grupo personalizado aquí."},{"key":"mstrWeb.7921","v":"Escriba la descripción del grupo personalizado aquí."},{"key":"mstrWeb.7922","v":"Nuevo elemento de grupo personalizado"},{"key":"mstrWeb.7923","v":"Agregar nuevo elemento de grupo personalizado"},{"key":"mstrWeb.7924","v":"Opciones..."},{"key":"mstrWeb.7925","v":"Seleccionar atributo..."},{"key":"mstrWeb.7926","v":"Explorar..."},{"key":"mstrWeb.7927","v":"Seleccionar indicador..."},{"key":"mstrWeb.7928","v":"Explorar elementos..."},{"key":"mstrWeb.7929","v":"Error al cargar datos."},{"key":"mstrWeb.7930","v":"Condición de vacío"},{"key":"mstrWeb.7931","v":"Eliminar condición"},{"key":"mstrWeb.7932","v":"Opciones de visualización de elementos"},{"key":"mstrWeb.7933","v":"Eliminar elemento"},{"key":"mstrWeb.7934","v":"Opciones de elemento"},{"key":"mstrWeb.7935","v":"Mostrar sólo nombre de elemento (por defecto)"},{"key":"mstrWeb.7936","v":"Mostrar sólo elementos individuales"},{"key":"mstrWeb.7937","v":"Mostrar nombre del elemento y elementos individuales"},{"key":"mstrWeb.7940","v":"Categoría"},{"key":"mstrWeb.7941","v":"Vista previa de borde"},{"key":"mstrWeb.7942","v":"Encabezado de elemento"},{"key":"mstrWeb.7943","v":"Valor de elemento"},{"key":"mstrWeb.7944","v":"Encabezado de elementos individuales"},{"key":"mstrWeb.7945","v":"Valor de elementos individuales"},{"key":"mstrWeb.7947","v":"El Elemento de grupo personalizado no puede estar vacío. Defina al menos una condición para #."},{"key":"mstrWeb.7953","v":"Editor de condición"},{"key":"mstrWeb.7954","v":"Habilitar la visualización jerárquica"},{"key":"mstrWeb.7955","v":"Habilitar la visualización de subtotales"},{"key":"mstrWeb.7956","v":"Encabezado padre de posición:"},{"key":"mstrWeb.7957","v":"Sobre los elementos hijos"},{"key":"mstrWeb.7958","v":"Bajo los elementos hijos"},{"key":"mstrWeb.7959","v":"Interacción con filtros de informes:"},{"key":"mstrWeb.7960","v":"Por defecto (nivel de instancia de base de datos)"},{"key":"mstrWeb.7961","v":"Sin interacción"},{"key":"mstrWeb.7962","v":"Aplicar pero omitir elementos relacionados"},{"key":"mstrWeb.7963","v":"Encabezado de elemento 1"},{"key":"mstrWeb.7964","v":"Encabezado de elemento 2"},{"key":"mstrWeb.7965","v":"Artículo 1-1"},{"key":"mstrWeb.7966","v":"Artículo 1-2"},{"key":"mstrWeb.7967","v":"Artículo 2-1"},{"key":"mstrWeb.7968","v":"Artículo 2-2"},{"key":"mstrWeb.7969","v":"Opciones del grupo personalizado"},{"key":"mstrWeb.7970","v":"Abrir editor de degradado"},{"key":"mstrWeb.7972","v":"Importar datos"},{"key":"mstrWeb.7984","v":"Objeto guardado"},{"key":"mstrWeb.7985","v":"Error al guardar:"},{"key":"mstrWeb.7986","v":"El ## \'###\' ya existe. ¿Desea reemplazar el existente?"},{"key":"mstrWeb.7987","v":"El ## \'###\' se ha guardado correctamente."},{"key":"mstrWeb.8022","v":"El grupo personalizado contiene condiciones no compatibles que no se pueden editar. No se guardarán los cambios al objeto. Use MicroStrategy Developer para editar y guardar objetos."},{"key":"mstrWeb.8031","v":"Editor de grupos personalizados (solo lectura)"},{"key":"mstrWeb.8078","v":"Leer"},{"key":"mstrWeb.8079","v":"Escribir"},{"key":"mstrWeb.8080","v":"Controlar"},{"key":"mstrWeb.8081","v":"Utilizar"},{"key":"mstrWeb.8082","v":"Ejecutar"},{"key":"mstrWeb.8083","v":"Concedido"},{"key":"mstrWeb.8084","v":"Denegado"},{"key":"mstrWeb.8085","v":"Consumir"},{"key":"mstrWeb.8086","v":"Colaborar"},{"key":"mstrWeb.8087","v":"Control total"},{"key":"mstrWeb.8088","v":"Denegar todo"},{"key":"mstrWeb.8089","v":"Personalizado..."},{"key":"mstrWeb.8090","v":"Ver"},{"key":"mstrWeb.8091","v":"Explorador de usuario/grupo de usuarios"},{"key":"mstrWeb.8092","v":"Nivel de permiso personalizado"},{"key":"mstrWeb.8093","v":"Compartir: ##"},{"key":"mstrWeb.8112","v":"Grupos personalizados compartidos"},{"key":"mstrWeb.8113","v":"Nuevo grupo personalizado"},{"key":"mstrWeb.8116","v":"Nueva carpeta"},{"key":"mstrWeb.8117","v":"Error al solicitar datos:"},{"key":"mstrWeb.8134","v":"El tablero ## ya existe. ¿Desea reemplazar el tablero existente?"},{"key":"mstrWeb.8145","v":"Barra de navegación"},{"key":"mstrWeb.8146","v":"Panel Herramientas"},{"key":"mstrWeb.8147","v":"Pie de página"},{"key":"mstrWeb.8191","v":"valor1## valor2## ...## valorN"},{"key":"mstrWeb.8262","v":"Manual"},{"key":"mstrWeb.8607","v":"Descartar"},{"key":"mstrWeb.8950","v":"Sustituir texto dinámico:"},{"key":"mstrWeb.8956","v":"Tipo de objeto"},{"key":"mstrWeb.9048","v":"Algunos grupos/usuarios no existen. Quítelos para poder continuar."},{"key":"mstrWeb.9099","v":"Compartir"},{"key":"mstrWeb.9106","v":"¿Requiere validación?"},{"key":"mstrWeb.9122","v":"El nombre no puede estar vacío"},{"key":"mstrWeb.9135","v":"No se encontró ninguna coincidencia"},{"key":"mstrWeb.9151","v":"Escriba aquí los usuarios o grupos."},{"key":"mstrWeb.9163","v":"Todas las carpetas"},{"key":"mstrWeb.9168","v":"Tipo para buscar"},{"key":"mstrWeb.9197","v":"Falta un símbolo de arroba (@) en la dirección de correo electrónico."},{"key":"mstrWeb.9198","v":"Falta un punto en el dominio de la dirección de correo electrónico."},{"key":"mstrWeb.9202","v":"La búsqueda de ## en ### no devolvió ningún resultado."},{"key":"mstrWeb.9203","v":"Un número de teléfono debe contener al menos 10 dígitos."},{"key":"mstrWeb.9204","v":"El número de teléfono contiene caracteres no válidos."},{"key":"mstrWeb.9205","v":"La entrada no es válida."},{"key":"mstrWeb.9206","v":"El código postal no es válido."},{"key":"mstrWeb.9207","v":"La dirección de correo electrónico no es válida."},{"key":"mstrWeb.9208","v":"Un código postal debe tener 5 dígitos o 5+4 dígitos."},{"key":"mstrWeb.9209","v":"Un número de seguridad social debe tener 9 dígitos."},{"key":"mstrWeb.9210","v":"El número de seguridad social no es válido."},{"key":"mstrWeb.9211","v":"Este campo debe tener entre # y ## caracteres."},{"key":"mstrWeb.9242","v":"Publicar nuevamente"},{"key":"mstrWeb.9264","v":"Para búsquedas más rápidas, use Búsqueda Rápida. Esta funcionalidad se encuentra apagada y el índice no esta disponible. Para activar, contacte a su Administrador#."},{"key":"mstrWeb.9277","v":"Indicadores Compartidos"},{"key":"mstrWeb.9423","v":"Hoy"},{"key":"mstrWeb.9424","v":"más"},{"key":"mstrWeb.9425","v":"menos"},{"key":"mstrWeb.9559","v":"Editor de fórmulas:"},{"key":"mstrWeb.9560","v":"Insertar función..."},{"key":"mstrWeb.9562","v":"Cambiar al editor de funciones"},{"key":"mstrWeb.9563","v":"Cambiar al editor de fórmulas"},{"key":"mstrWeb.9564","v":"¿Borrar todos el formato?"},{"key":"mstrWeb.9565","v":"Fórmula de indicador válida."},{"key":"mstrWeb.9566","v":"Validación en curso..."},{"key":"mstrWeb.9567","v":"Error de validación con error de sintaxis."},{"key":"mstrWeb.9568","v":"Error de validación con ambigüedad de objetos."},{"key":"mstrWeb.9571","v":"Error de sintaxis."},{"key":"mstrWeb.9572","v":"Opciones avanzadas de indicadores"},{"key":"mstrWeb.9573","v":"¿Desea guardar los cambios realizados a #?"},{"key":"mstrWeb.9577","v":"Opciones avanzadas de nivel"},{"key":"mstrWeb.9579","v":"Condición"},{"key":"mstrWeb.9581","v":"Opciones avanzadas de condiciones"},{"key":"mstrWeb.9582","v":"Editor de funciones:"},{"key":"mstrWeb.9583","v":"Permitir a otros usuarios agregar más unidades a esta definición"},{"key":"mstrWeb.9584","v":"Incluir atributos de filtro que no estén en el informe o en el nivel en el cálculo de indicadores"},{"key":"mstrWeb.9585","v":"Interacción entre el filtro de indicadores y el filtro de informe:"},{"key":"mstrWeb.9586","v":"Combinar en uno nuevo"},{"key":"mstrWeb.9587","v":"Combinar el filtro del informe en un indicador"},{"key":"mstrWeb.9588","v":"Combinar la condición del indicador en el informe"},{"key":"mstrWeb.9589","v":"Ignorar elementos del filtro de informe relacionados"},{"key":"mstrWeb.9590","v":"Resultado de la búsqueda"},{"key":"mstrWeb.9591","v":"Plantillas de indicador"},{"key":"mstrWeb.9592","v":"Cree un indicador de nivel."},{"key":"mstrWeb.9593","v":"Cree un indicador condicional."},{"key":"mstrWeb.9594","v":"Cree un indicador de transformación."},{"key":"mstrWeb.9595","v":"Seleccionar una función o una plantilla"},{"key":"mstrWeb.9597","v":"Cree una fórmula del indicador usando indicadores, hechos, atributos y funciones."},{"key":"mstrWeb.9598","v":"Opciones de nivel"},{"key":"mstrWeb.9599","v":"Relación con el filtro de informe:"},{"key":"mstrWeb.9600","v":"Estándar: el indicador sólo calcula los elementos encontrados en el filtro"},{"key":"mstrWeb.9601","v":"Absoluto: eleva el cálculo al nivel seleccionado, si es posible"},{"key":"mstrWeb.9602","v":"Ignorar: omite los criterios de filtrado en el nivel seleccionado y sus atributos relacionados"},{"key":"mstrWeb.9603","v":"Ninguno - No especificado - el nivel seleccionado y los componentes de nivel definen el filtro"},{"key":"mstrWeb.9604","v":"Agregaciones de indicador:"},{"key":"mstrWeb.9605","v":"Estándar - El indicador calcula en el nivel seleccionado, si es posible"},{"key":"mstrWeb.9606","v":"Ninguno - Excluye el nivel y los hijos seleccionados de la cláusula GROUP BY en SQL"},{"key":"mstrWeb.9607","v":"Comenzando (tabla de lookup) - utilice el primer valor de la tabla de lookup"},{"key":"mstrWeb.9608","v":"Finalizando (tabla de lookup) - utilice el último valor de la tabla de lookup"},{"key":"mstrWeb.9609","v":"Comenzando (tabla de hechos) - utilice el primer valor de la tabla de hechos"},{"key":"mstrWeb.9610","v":"Finalizando (tabla de hechos) - utilice el último valor de la tabla de hechos"},{"key":"mstrWeb.9710","v":"Encabezados de indicador"},{"key":"mstrWeb.9711","v":"Valores del indicador"},{"key":"mstrWeb.9771","v":"Ya se concedió el permiso agregado."},{"key":"mstrWeb.9772","v":"Correo electrónico"},{"key":"mstrWeb.9773","v":"Vínculo"},{"key":"mstrWeb.9774","v":"Anidar"},{"key":"mstrWeb.9775","v":"Quién tiene acceso"},{"key":"mstrWeb.9776","v":"Público (no se requiere inicio de sesión)"},{"key":"mstrWeb.9777","v":"Todos los usuarios (se requiere inicio de sesión)"},{"key":"mstrWeb.9826","v":"La definición del indicador tiene un error. Corríjalo antes de continuar."},{"key":"mstrWeb.9890","v":"Conservar las listas de control de acceso de los hijos"},{"key":"mstrWeb.9891","v":"Sobrescribir las listas de control de acceso de los hijos"},{"key":"mstrWeb.9892","v":"Acceso de hijos"},{"key":"mstrWeb.9893","v":"Usar existente"},{"key":"mstrWeb.9925","v":"Funciones"},{"key":"mstrWeb.11038","v":"No válido"},{"key":"mstrWeb.11226","v":"Archivo no reconocido"},{"key":"mstrWeb.11227","v":"Selecciona un archivo con la extensión .mstr."},{"key":"mstrWeb.11564","v":"Parámetros de función"},{"key":"mstrWeb.11565","v":"Parámetros"},{"key":"mstrWeb.11566","v":"Nombre del indicador:"},{"key":"mstrWeb.11567","v":"Seleccione una función de la izquierda"},{"key":"mstrWeb.11569","v":"La entrada contiene un carácter no válido"},{"key":"mstrWeb.11579","v":"Editor de indicadores"},{"key":"mstrWeb.11655","v":"Fórmula válida."},{"key":"mstrWeb.11656","v":"Recuento de filas"},{"key":"mstrWeb.11657","v":"Recuento de filas calcula el número total de filas en el conjunto de datos."},{"key":"mstrWeb.11773","v":"Registrar"},{"key":"mstrWeb.11804","v":"Iniciar sesión en"},{"key":"mstrWeb.11812","v":"Notificación"},{"key":"mstrWeb.11856","v":"Introduzca un valor entre ## y ###."},{"key":"mstrWeb.11863","v":"Su sesión de usuario ha caducado debido a la inactividad; la sesión se ha cerrado automáticamente. Inicie sesión de nuevo."},{"key":"mstrWeb.11865","v":"Su sesión ha caducado."},{"key":"mstrWeb.11897","v":"Validar"},{"key":"mstrWeb.11935","v":"Caracteres no válidos"},{"key":"mstrWeb.11936","v":"Introduzca un número."},{"key":"mstrWeb.11937","v":"Introduzca un número entero."},{"key":"mstrWeb.11938","v":"Este selector no admite varias selecciones."},{"key":"mstrWeb.11940","v":"Seleccionar conjunto de datos existente"},{"key":"mstrWeb.11960","v":"Cargando datos..."},{"key":"mstrWeb.12139","v":"Gráfico"},{"key":"mstrWeb.12173","v":"División"},{"key":"mstrWeb.12178","v":"Nivel de visualización"},{"key":"mstrWeb.12179","v":"Buscar #"},{"key":"mstrWeb.12187","v":"Actualice su explorador o desactive la vista de compatibilidad de Internet Explorer para trabajar con tableros HTML5."},{"key":"mstrWeb.12299","v":"¿Está seguro de que desea eliminar el usuario/grupo de usuarios #?"},{"key":"mstrWeb.12437","v":"Comportamiento de agregación y subtotal:"},{"key":"mstrWeb.12438","v":"Agregar desde base"},{"key":"mstrWeb.12439","v":"Subtotales desde base"},{"key":"mstrWeb.12852","v":"Ordenar por"},{"key":"mstrWeb.12853","v":"de"},{"key":"mstrWeb.13035","v":"Opciones de indicadores"},{"key":"mstrWeb.13052","v":"Cargar"},{"key":"mstrWeb.13138","v":"Este selector no admite las selecciones no contiguas."},{"key":"mstrWeb.13141","v":"Editar parámetros de función"},{"key":"mstrWeb.13230","v":"No se puede calificar en valor decimal grande. Cambie el tipo de calificación a Orden"},{"key":"mstrWeb.13249","v":"Nombre para mostrar:"},{"key":"mstrWeb.13260","v":"El filtro no puede mostrar las selecciones reales."},{"key":"mstrWeb.13283","v":"Por celda"},{"key":"mstrWeb.13284","v":"Por forma"},{"key":"mstrWeb.13285","v":"Hacia abajo y luego a través"},{"key":"mstrWeb.13286","v":"A través y luego hacia abajo"},{"key":"mstrWeb.13380","v":"Cerrar sesión"},{"key":"mstrWeb.13381","v":"Permanecer conectado"},{"key":"mstrWeb.13382","v":"Su sesión de usuario agotará el tiempo de espera debido a la inactividad en ###."},{"key":"mstrWeb.13384","v":"La opción \'Crear informe\' no está disponible actualmente para los conjuntos de datos de Conexión en vivo."},{"key":"mstrWeb.13399","v":"Celda"},{"key":"mstrWeb.13542","v":"Ambigüedad de objetos - ##"},{"key":"mstrWeb.13543","v":"Se encontró más de un objeto con el nombre \'##\'."},{"key":"mstrWeb.13550","v":"Acceder a datos externos"},{"key":"mstrWeb.13621","v":"Compartido por"},{"key":"mstrWeb.13819","v":"Entrada no válida"},{"key":"mstrWeb.13825","v":"Código de Usher"},{"key":"mstrWeb.13844","v":"Fecha dinámica"},{"key":"mstrWeb.14028","v":"Actualizar código QR"},{"key":"mstrWeb.14058","v":"Mostrar detalles"},{"key":"mstrWeb.14059","v":"Ocultar detalles"},{"key":"mstrWeb.14060","v":"Lamentamos las molestias. {contact} con el administrador para obtener ayuda."},{"key":"mstrWeb.14061","v":"Se produjo un error"},{"key":"mstrWeb.14111","v":"Este cubo no se ha publicado."},{"key":"mstrWeb.14136","v":"Utilice su aplicación de ###Usher## para escanear el código QR"},{"key":"mstrWeb.14137","v":"¿No tiene un gafete de Usher? Haga clik ###aquí## para registrarse."},{"key":"mstrWeb.14138","v":"O puede introducir sus ###credenciales##."},{"key":"mstrWeb.14139","v":"Usted se ha registrado exitosamente. Por favor cheque su correo electrónico para continuar."},{"key":"mstrWeb.14140","v":"Mostrar el ###Código QR##."},{"key":"mstrWeb.14143","v":"Introduzca un número"},{"key":"mstrWeb.14144","v":"Mostrar nombres de rangos"},{"key":"mstrWeb.14145","v":"Inicio - Final"},{"key":"mstrWeb.14146","v":"Rango #"},{"key":"mstrWeb.14147","v":"Rango #: Inicio - Final"},{"key":"mstrWeb.14149","v":"Confirmar correo electrónico"},{"key":"mstrWeb.14177","v":"O realice una recuperación de placa de Usher."},{"key":"mstrWeb.14521","v":"Refinar"},{"key":"mstrWeb.14522","v":"Recordarme"},{"key":"mstrWeb.14523","v":"Hola"},{"key":"mstrWeb.14524","v":", apruebe en su dispositivo."},{"key":"mstrWeb.14525","v":"Iniciar sesión con Usher"},{"key":"mstrWeb.14526","v":"No he recibido notificación"},{"key":"mstrWeb.14527","v":"Olvidarme/Cambiar usuario"},{"key":"mstrWeb.14557","v":"La búsqueda de dependientes de ## en ### no devolvió ningún resultado."},{"key":"mstrWeb.14633","v":"No se puede anidar una imagen de más de ## MB. La imagen sigue teniendo ### MB después de la compresión. En su lugar, introduzca una URL a la imagen."},{"key":"mstrWeb.14636","v":"Formato de imagen no válido. Utilice .png, .jpg, .jpeg, .gif o .bmp."},{"key":"mstrWeb.14665","v":"No se puede anidar una imagen de más de ## MB. En su lugar, introduzca una URL a la imagen."},{"key":"mstrWeb.15361","v":"Doble"}]},
+        onSessionExpired: window.mstrAppOnSessionExpired
+};
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="../style/mstr/fsm.css?v=409271983"/>
+
+    <link rel="stylesheet" type="text/css" href="../style/mstr/mstr.css?v=409271983"/>
+
+
+
+    <link rel="stylesheet" type="text/css" href="../style/mstr/mstrColorThemeBlue.css?v=409271983"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../javascript/bundles/bone-global.js?v=409271983" language="javascript"><!-- --></script>
+<script src="../javascript/bundles/mojo-bootstrap.js?v=409271983" language="javascript"><!-- --></script>
+
+<script language="JavaScript">
+try { document.execCommand("BackgroundImageCache", false, true); } catch(err) {}
+</script>
+
+
+
+    <script language="javascript">
+        if (typeof(microstrategy) != 'undefined') {
+            microstrategy.sessionState = '0.00000001ffd27cdfd95040a67e414bb872f629a50fe7230532a42278ec2b0da9e8f72bc628d7b0d1fe3865848662d146fe15e31731c5952211e6211420b59f3a38711e240bc7e7559e9f434eef07970b988368655e6cf6cfcf0ecdba7e572a545fcbe8f90b0531dd989eb8c7fddf5757dbc1a95eede94e026823ba5ccb6650c036a218107f229d1d.3082.1.2.AGT.pxs*_1*_ul*_36*_sp*_36*_upriv*_1*_lcmdsv*_24*_sd*_35*_itu*_1*_prun*_36*_pal*_7*_prup*_1*_up*_1*_itup*_1*_pidn2*_48*_upp*_1*_sdip*_36*_pf*_36*_df*_36*_session*-lat*_1*_upl*_36*_pp*_36*_prjInst*_1.000000019cee8d1f824e4c6a8901654c73ea6c018d8db8fdb83a34f66828787202d2c975d13ae9a9d523c8f22075d78436871ded4f91bdc136f1171a.0.1.1.Prisma.AE29AE9447E195BE4858CF80F670B9CD.0-3082.1.1_-11274.1.1_-3082.1.1_4.1.0.*0.0';
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+.mstr, .mstr input, .mstr select, .mstr textarea, .mstr table, .mstr th, .mstr td {
+
+
+}
+
+</style>
+
+
+
+<link rel="stylesheet" type="text/css" href="../style/mstr/chrome.css?v=409271983" /> 
+
+
+</head>
+<body class="mstrWeb mstrWebErrorPage Blue"  onload="if(typeof(document.readyState) == 'undefined') document.readyState = 'complete';microstrategy.eventManager.executeFunction('microstrategy.eventManager.onload()');" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mstrShortcutsBar" id="mstrWeb_shortcutsBar" name="mstrWeb_shortcutsBar" iframe="true">
+
+</div>
+
+
+
+<div class="mstrDockTop" id="mstrWeb_dockTop" name="mstrWeb_dockTop" iframe="true">
+
+
+
+<div class="mstrSpacer"></div>
+</div>
+
+<div class="mstrDockLeft" id="mstrWeb_dockLeft" name="mstrWeb_dockLeft" iframe="true">
+
+
+<a href="mstrWeb?hiddenSections=header%2Cpath&evt=5008&src=mstrWeb.error.5008&value=0&name=lTbar"  onclick="return submitLink(this, event)"  class="mstrLink"><img SRC="../images/1ptrans.gif" id="btnDockLeft" alt="Ocultar barra de opciones" />
+
+
+</A>
+
+
+
+
+
+</div>
+<div class="mstrError" id="mstrWeb_error" name="mstrWeb_error" iframe="true">
+
+<div class="mstrAlert">
+<div class="mstrAlertTitle"></div>
+<div class="mstrAlertMessage"></div>
+
+
+</div>
+</div>
+<div class="mstrDockRight" id="mstrWeb_dockRight" name="mstrWeb_dockRight" iframe="true">
+
+
+
+
+</div>
+<div class="mstrDockBottom" id="mstrWeb_dockBottom" name="mstrWeb_dockBottom" iframe="true">
+
+
+
+
+</div>
+<div class="mstrFooterWrapper" id="mstrWeb_footer" name="mstrWeb_footer" iframe="true">
+
+
+
+
+</div>
+
+
+
+</body>
+</html>
+
+
+with open('sali.html', 'w') as file: file.write(response.properties['response'].text)
