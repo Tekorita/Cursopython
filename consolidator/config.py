@@ -15,7 +15,7 @@ config_input = {
         {
             'type': TypeReport.SALES,
             'source': os.path.join(DATA_FOLDER, 'ventas.csv'),
-            'expected_units_sum': -46,
+            'expected_units_sum': -8597,
             'expected_cost_value_sum': -750.69,
             'expected_sales_value_sum': -750.69,
             'expected_content_rows': 12,

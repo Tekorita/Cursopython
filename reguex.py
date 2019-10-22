@@ -160,7 +160,7 @@ x = re.search(r"\bS\w+", str)
 print(x.span())
 
 #Imprima la cadena pasada a la función:
-print("- Match -string")
+print("- Match -strings")
 str = "The rain in Spain"
 x = re.search(r"\bS\w+", str)
 print(x.string)

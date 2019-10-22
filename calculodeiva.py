@@ -29,7 +29,7 @@
 i = 0
 
 while i < 5:
-    precio = int(input("ingresa el precio: "))
+    precio = int(input("ingresa el precio para hacer el calculo: "))
     impuesto = int(input("ingresa el impuesto: "))
     resultado = precio * impuesto / 100 + precio
     print(float(resultado))

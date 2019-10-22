@@ -10,9 +10,9 @@ SyntaxError: invalid syntax
 >>> while respuesta == "si":
 ... 	numero = int(input("digite un numero cualquiera: "))
 ... 	if numero > 0:
-... 		print("El numero ingresado es positivo")
+... 		print("El numero ingresado es positivo mayor a 0")
 ... 	elif numero < 0:
-... 		print("El numero ingresado es negativo")
+... 		print("El numero ingresado es negativo menor a 0")
 ... 	else:
 ... 		print("El numero ingresado es igual a cero")
 ... 

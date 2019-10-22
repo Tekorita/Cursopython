@@ -51,3 +51,4 @@ class TransformerFactory:
     def parse_cod_local(self, value):
         code_value = self.store.objects.get_code(self.portal, value)
         return super(MonroeColumnsTranslator, self).parse_cod_local(code_value)
+        raise NotImplementedError(f'Transformer class for {portal} not found or not exists')

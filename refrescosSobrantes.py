@@ -32,7 +32,7 @@
 #30 236         |   124
 i = 0
 while i < 5:
-    cajas = int(input("Ingresa la cantidad de cajas de refresco o refrescas: "))
+    cajas = int(input("Ingresa la cantidad de cajas de refrescos: "))
     alumnos = int(input("Ingresa la cantidad de alumnos a asistir: "))
     resultado = cajas * 12 - alumnos
     print(resultado)

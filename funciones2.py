@@ -1,4 +1,4 @@
-def suma(valor_uno, valor_dos, valor_tres):
+def suma(valor_uno, valor_dos, valor_tres, *args):
 	return valor_uno + valor_dos + valor_tres
 
 def division(valor_uno, valor_dos):
@@ -10,7 +10,7 @@ def multiplicacion(valor_uno, valor_dos = 10):
 def multiples_valores():
 	return 'String', 1, True, 56.9	
 
-resultado1 = suma(10, 20, 30)
+resultado1 = suma(10, 20, 30, 60, 90)
 print(resultado1)
 
 resultado2 = division(100,10)

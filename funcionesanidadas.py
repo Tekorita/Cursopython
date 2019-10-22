@@ -43,6 +43,10 @@ def aplicar_funcion(func):
 	resultado = func()
 	print(resultado)
 
+def aplicar_funcion2(func):
+	resultado = func()
+	print(resultado)
+
 nueva_funcion = crear_funcion(10, 9)
 aplicar_funcion(nueva_funcion)
 

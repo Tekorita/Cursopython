@@ -17,6 +17,9 @@ valores_lista = list(diccionario.values()) #mostramos los valores del diccionari
 llaves_tuplas = tuple(diccionario.keys()) #mostramos las llaves del diccionario como una tupla 
 valores_tuplas = tuple(diccionario.values()) #mostramos los valores del diccionario como una tupla 
 
+llaves_tuplas = tuple(diccionario.keys()) #mostramos las llaves del diccionario como una tupla 
+valores_tuplas = tuple(diccionario.values())
+
 """como concatenar diccionarios existen 2 formas"""
 
 diccionario2 = {9 : 'ronaldo CR7', 10: 'messi', 7: 'ibrahimobich'}

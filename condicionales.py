@@ -9,7 +9,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 SyntaxError: invalid syntax
 >>> numero = 1
 >>> if numero > 0:
-... 	print("numero es positivo")
+... 	print("numero es positivo mayor a 0")
 ... 
 numero es positivo
 >>> numero = -6
