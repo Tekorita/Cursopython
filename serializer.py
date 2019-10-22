@@ -7,6 +7,7 @@ serializado = marshal.dumps(lista)
 print(serializado)
 
 deserializado = marshal.loads(serializado)
+deserializado2 = marshal.loads(serializado)
 
 print(deserializado)
 
