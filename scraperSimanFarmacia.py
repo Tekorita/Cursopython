@@ -62,6 +62,18 @@ class SimanFarmaciaScraper(BaseScraper):
             check_auth_func=self.check_auth_func,
             encode_payload=False,
         )
+        status_result2 = self.portal_auth_services.do_login(
+            data_login=payload,
+            headers=self.portal.headers,
+            check_auth_func=self.check_auth_func,
+            encode_payload=False,
+        )
+        status_result = self.portal_auth_services.do_login(
+            data_login=payload,
+            headers=self.portal.headers,
+            check_auth_func=self.check_auth_func,
+            encode_payload=False,
+        )
         return status_result
 
     def check_auth_func(self, response):
