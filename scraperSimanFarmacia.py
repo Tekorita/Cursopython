@@ -80,21 +80,6 @@ class SimanFarmaciaScraper(BaseScraper):
         if 'Usuario o contraseña equivocada.' in response.text:
             raise ScraperException('error-wrong-credentials')
 
-    # def _download_sales_v2(self, downloads, download_range):
-    #     self.__do_download_file(
-    #         category_id=downloads['category_id'],
-    #         begin_date=download_range['start'],
-    #         end_date=download_range['end'],
-    #         report_type=TypeReport.SALES,
-    #     )
-
-    # def _download_stock_v2(self, downloads, download_range):
-    #     self.__do_download_file(
-    #         category_id=downloads['category_id'],
-    #         begin_date=download_range['start'],
-    #         end_date=download_range['end'],
-    #         report_type=TypeReport.SALES,
-    #     )
 
     # def __do_download_file(self, category_id, report_type, begin_date, **kwargs):
 
