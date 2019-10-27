@@ -104,7 +104,6 @@ class SimanFarmaciaScraper(BaseScraper):
             headers=props['download_headers'],
             data=payload,
         )
-        import pdb; pdb.set_trace()
         if request_result.status:
             response = request_result.get_property('response')
             self.download_result_list.extend(
