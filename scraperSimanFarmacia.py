@@ -99,16 +99,6 @@ class SimanFarmaciaScraper(BaseScraper):
             Fecha1=date_range['start'].strftime("%d/%m/%Y"),
             Fecha2=date_range['end'].strftime("%d/%m/%Y"),
         )
-        payload2 = self.base_services.get_dict_with_updated_values(
-            dictionary=props['download_data']['sales'],
-            Fecha1=date_range['start'].strftime("%d/%m/%Y"),
-            Fecha2=date_range['end'].strftime("%d/%m/%Y"),
-        )
-        payload3 = self.base_services.get_dict_with_updated_values(
-            dictionary=props['download_data']['sales'],
-            Fecha1=date_range['start'].strftime("%d/%m/%Y"),
-            Fecha2=date_range['end'].strftime("%d/%m/%Y"),
-        )
         request_result = self.request_services.post(
             url=props['download_url']['sales'],
             headers=props['download_headers'],
