@@ -54,6 +54,12 @@ class Validator:
             encoding=encoding,
         )
 
+        final_validation2 = self.build_final_validation(
+            file_path=file_path,
+            validation_key=validation_key,
+            encoding=encoding,
+        )
+
         report = validate(
             file_path,
             schema=final_validation,
