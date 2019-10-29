@@ -22,6 +22,13 @@ class Validator:
         'blank-header',
     )
 
+    SKIP_CHECKS2 = (
+        'duplicate-header',
+        'duplicate-row',
+        'source-error',
+        'blank-header',
+    )
+
     def __init__(self, portal):
         assert portal.validation, \
             'Validation config not exists. ' \
