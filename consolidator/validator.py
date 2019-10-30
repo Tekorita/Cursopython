@@ -66,6 +66,7 @@ class Validator:
         """
         Build the final validation (a.k.a descriptor) dict.
         Params:
+        Params:
         :(str) file_path:       File will be validate
         :(dict) validation_key: Each object in array represents 1 column in the file_path, a.k.a.
                                 field-descriptor.
@@ -83,8 +84,6 @@ class Validator:
         }
         For more options read the docs "Description section" in
         https://frictionlessdata.io/specs/table-schema/#descriptor
-
-        :return:
         """
         new_validation = deepcopy(self.portal.validation[validation_key])
         column_names = self._get_columns_names(file_path, **kwargs)
