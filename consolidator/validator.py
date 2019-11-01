@@ -82,6 +82,8 @@ class Validator:
               # a constraints-descriptor
           }
         }
+        and finally
+
         For more options read the docs "Description section" in
         https://frictionlessdata.io/specs/table-schema/#descriptor
         """
