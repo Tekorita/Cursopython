@@ -25,9 +25,9 @@ def multiplicacion(valor1, valor2, valor3):
     calculo = valor1 * valor2 / valor3
     print(calculo)
 
-valor1 = int(input("Ingresa el valor1: "))
-valor2 = int(input("Ingresa el valor2: "))
-valor3 = int(input("Ingresa el valor3: "))
+valor1 = int(input("Ingresa el valor 1: "))
+valor2 = int(input("Ingresa el valor 2: "))
+valor3 = int(input("Ingresa el valor 3: "))
 
 sumas(valor1,valor2,valor3)
 restas(valor1,valor2,valor3)
