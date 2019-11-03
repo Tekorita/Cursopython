@@ -18,7 +18,12 @@ def sumas(valor1, valor2, valor3):
 @decorador
 def restas(valor1, valor2, valor3):
     calculo = valor1 - valor2 / valor3
-    print(calculo)  
+    print(calculo)
+
+@decorador
+def multiplicacion(valor1, valor2, valor3):
+    calculo = valor1 * valor2 / valor3
+    print(calculo)
 
 valor1 = int(input("Ingresa el valor1: "))
 valor2 = int(input("Ingresa el valor2: "))
@@ -26,4 +31,5 @@ valor3 = int(input("Ingresa el valor3: "))
 
 sumas(valor1,valor2,valor3)
 restas(valor1,valor2,valor3)
+multiplicacion(valor1,valor2,valor3)
 
