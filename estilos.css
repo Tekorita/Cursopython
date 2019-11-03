@@ -1,0 +1,63 @@
+.uael-woocommerce .uael-woo-products-summary-wrap .button {
+	padding:10px 30px!important
+}
+
+button#place_order {
+	padding-top:20px!important;
+	padding-bottom:20px!important;
+	padding:20px!important
+}
+
+#order_review_heading, #order_review {
+background-color:#f8f8f8!important;
+}
+
+.woocommerce-mini-cart__buttons a, .wc-forward, .add_to_cart_button {
+	padding-top:10px!important;
+	padding-bottom:10px!important;
+}
+
+
+.ast-woo-shop-archive .woocommerce-breadcrumb{
+	display:none!important
+}
+
+.ast-woo-shop-archive .woocommerce-notices-wrapper {
+	margin-top:20px!important
+}
+
+.wpcf7-form-control-wrap  textarea {
+	height:150px!important;
+}
+
+.wpcf7-form-control-wrap {
+	margin-top:-20px!important;
+}
+
+.ast-woocommerce-container {
+	padding:20px 30px!important
+}
+
+.main-header-bar-scroll {
+    z-index: 4;
+    position: fixed;
+    line-height: 4;
+    width: -webkit-fill-available;
+    border-bottom-width:0px;
+    background: white!important;
+}
+
+.main-header-bar-scroll a {
+    color:black!important;
+}
+
+.main-header-bar-scroll a:hover {
+    color:#db6159!important;
+}
+
+.main-header-bar-scroll ul li a {
+    background: white!important;
+}
+
+/*public_html/wp-content/plugins/contact-form-7/includes/js/scripts.js
+*/
