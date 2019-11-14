@@ -14,7 +14,7 @@ def migratoryBirds(arr):
 
 migratoryBirds(lista)
 
-#print(lista2)
-#print(lista)
+print(lista2)
+print(lista)
 
-#print(lista.count(5))
+print(lista.count(5))
