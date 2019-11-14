@@ -80,8 +80,7 @@ class Validator:
           "description": "A description for the field",
           "constraints": {
               # a constraints-descriptor
-          }
-          
+          } 
         }
         and finally
 
