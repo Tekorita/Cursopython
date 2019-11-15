@@ -30,8 +30,21 @@ def multiplicacion(num_uno, num_dos):
 	if validacion():
 		return num_uno * num_dos
 
+def suma(num_uno, num_dos):
+	def validacion(): #esta es una funcio anidada
+		return num_uno > 0 and num_dos > 0
+
+	if validacion():
+		return num_uno + num_dos
+
 resultado = division (10,2)
 print(resultado)
+
+
+resultado = division (10,2)
+print(resultado)
+
+
 
 #En las funciones anidadas existen los closures que es crear una funcion dentro de otra funcion sin ser llamada
 #El termino de closures es que son funciones que crean a otras funciones y se retorna la nueva funcion creada
