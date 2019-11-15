@@ -37,7 +37,7 @@ def suma(num_uno, num_dos):
 	if validacion():
 		return num_uno + num_dos
 
-resultado = division (10,2)
+resultado = suma (10,2)
 print(resultado)
 
 
