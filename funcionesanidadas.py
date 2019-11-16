@@ -37,6 +37,13 @@ def suma(num_uno, num_dos):
 	if validacion():
 		return num_uno + num_dos
 
+def restar(num_uno, num_dos):
+	def validacion(): #esta es una funcio anidada
+		return num_uno > 0 and num_dos > 0
+
+	if validacion():
+		return num_uno - num_dos
+
 resultado = suma (10,2)
 print(resultado)
 
