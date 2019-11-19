@@ -23,3 +23,8 @@ for i in range(100):
 	time.sleep(0.2)
 	sys.stdout.write("\r%d %%" % i)
 	sys.stdout.flush()
+
+for v in range(20):
+	time.sleep(0.2)
+	sys.stdout.write("\r%d %%" % i)
+	sys.stdout.flush()
