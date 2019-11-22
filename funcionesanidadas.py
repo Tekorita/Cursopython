@@ -44,7 +44,7 @@ def restar(num_uno, num_dos):
 	if validacion():
 		return num_uno - num_dos
 
-resultado = suma (10,2)
+resultado = suma (10,50)
 print(resultado)
 
 
