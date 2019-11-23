@@ -20,7 +20,7 @@ def division(num_uno, num_dos):
 	if validacion():
 		return num_uno / num_dos
 
-resultado = multiplicacion (10,2)
+resultado = multiplicacion (10,20)
 print(resultado)
 
 def multiplicacion(num_uno, num_dos):
