@@ -44,7 +44,7 @@ def get_list_modules_from_folders():
     ]
     list_modules = [
         (
-            'scrapers.apps.consolidator.tests.consolidator_input.proconsumo_HN.config',
+            'scrapers.apps.consolidator.tests.consolidator_input.galeno_HN.config',
             'config_input',
         )
     ]
