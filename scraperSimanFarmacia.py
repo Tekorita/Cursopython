@@ -119,38 +119,38 @@ class SimanFarmaciaScraper(BaseScraper):
         else:
             ScraperException(request_result.get_error_status_code())
         import pdb; pdb.set_trace()
-    # def _download_stock_v2(self, downloads, date_range):
-    #     category_id = downloads['category_id']
-    #     file_name = self.base_services.get_file_name(
-    #         category_id=category_id,
-    #         client_id=self.client_id,
-    #         portal_name=self.portal.name,
-    #         report_type=TypeReport.STOCK,
-    #         start_date='',
-    #         end_date='',
-    #         ext='html',
-    #     )
-    #     payload = self.base_services.get_dict_with_updated_values(
-    #         dictionary=props['download_data']['stock'],
-    #         # Fecha1=date_range['start'].strftime("%d/%m/%Y"),
-    #         # Fecha2=date_range['end'].strftime("%d/%m/%Y"),
-    #     )
-    #     request_result = self.request_services.post(
-    #         url=props['download_url']['stock'],
-    #         headers=props['download_headers'],
-    #         data=payload,
-    #     )
-    #     if request_result.status:
-    #         response = request_result.get_property('response')
-    #         self.download_result_list.extend(
-    #             self.download_sales_file(
-    #                 begin_date=date_range['start'],
-    #                 # end_date=date_range['end'],
-    #                 file_name=file_name,
-    #                 response=response,
-    #                 category_id=category_id,
-    #                 # date_file=date_range['start'],
-    #             ),
-    #         )
-    #     else:
-    #         ScraperException(request_result.get_error_status_code())
+     def _download_stock_v2(self, downloads, date_range):
+        category_id = downloads['category_id']
+        file_name = self.base_services.get_file_name(
+            category_id=category_id,
+            client_id=self.client_id,
+            portal_name=self.portal.name,
+            report_type=TypeReport.STOCK,
+            start_date='',
+            end_date='',
+            ext='html',
+        )
+        payload = self.base_services.get_dict_with_updated_values(
+            dictionary=props['download_data']['stock'],
+            Fecha1=date_range['start'].strftime("%d/%m/%Y"),
+            Fecha2=date_range['end'].strftime("%d/%m/%Y"),
+        )
+        request_result = self.request_services.post(
+            url=props['download_url']['stock'],
+            headers=props['download_headers'],
+            data=payload,
+        )
+        if request_result.status:
+            response = request_result.get_property('response')
+            self.download_result_list.extend(
+                self.download_sales_file(
+                    begin_date=date_range['start'],
+                    end_date=date_range['end'],
+                    file_name=file_name,
+                    response=response,
+                    category_id=category_id,
+                    date_file=date_range['start'],
+                ),
+            )
+        else:
+            ScraperException(request_result.get_error_status_code())
