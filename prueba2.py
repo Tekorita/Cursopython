@@ -1,6 +1,7 @@
 lista1 = [1,2,3,4]
 lista2 = [4,3,2,1]
 lista3 = []
+import pdb; pdb.set_trace()
 print(lista1)
 print(lista2)
 
